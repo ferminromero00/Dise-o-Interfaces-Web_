@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">
+        HOJA DE INSCRIPCION <br>
+        EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR
+    </h1>
+    <form action="">
+        <fieldset style="background-color: #63594D;">
+            <legend style="background-color: #EAE3D1; border: solid ">Datos Personales</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre (*):</label> <br>
+                        <input type="text" name="nombre" id="nombre">
+                    </td>
+                    <td>
+                        <label for="apellidos">Apellidos (*):</label> <br>
+                        <input type="text" name="apellidos" id="apellidos">
+                    </td>
+                    <td>
+                        <label for="DNI">DNI (*):</label> <br>
+                        <input type="text" name="DNI" id="DNI">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="localidad">Localidad de Nacimiento:</label> <br>
+                        <input type="text" name="localidad" id="localidad">
+                    </td>
+                    <td>
+                        <label for="localidad">Provincia:</label> <br>
+                        <select name="lista_andalucia" id="lista_andalucia">
+                            <optgroup label="Andalucía">
+                                <option value="almeria">Almería</option>
+                                <option value="cadiz">Cádiz</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="granada">Granada</option>
+                                <option value="huelva" selected>Huelva</option>
+                                <option value="jaen">Jaén</option>
+                                <option value="malaga">Málaga</option>
+                                <option value="sevilla">Sevilla</option>
+                            </optgroup>
+                            <optgroup label="Castilla">
+                                <option value="avila">Ávila</option>
+                                <option value="burgos">Burgos</option>
+                                <option value="leon">León</option>
+                                <option value="palencia">Palencia</option>
+                                <option value="salamanca">Salamanca</option>
+                                <option value="segovia">Segovia</option>
+                                <option value="soria">Soria</option>
+                                <option value="valladolid">Valladolid</option>
+                                <option value="zamora">Zamora</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="Cumpleanos">Fecha de Nacimiento:</label> <br>
+                        <input type="date" name="Cumpleanos" id="Cumpleanos">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="direccion">Direccion (*):</label> <br>
+                        <input type="text" id="direccion" size="40">
+                    </td>
+                    <td>
+                        <label for="codigo_postal">Codigo Postal:</label> <br>
+                        <input type="text" inputmode="numeric" pattern="\d*" maxlength="5" minlength="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="email">Email (*):</label> <br>
+                        <input type="email" value="usuario@gmail.com" name="email" id="email" size="40"
+                            pattern="[a-z]+@iesiliberis\.com">
+                    </td>
+                    <td>
+                        <label for="tel">Telefono (*):</label> <br>
+                        <input type="tel" name="telefono" maxlength="9">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Contraseña (*)</label>
+                        <input type="password" name="contraseña" id="pass" maxlength="8"
+                         pattern="(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset style="background-color: #B18272;">
+            <legend style="background-color: #EAE3D1; border: solid;">Forma de Acceso</legend>
+
+            <table>
+                <ol>
+                    <input type="radio" name="opcion"> Directo
+                    <ul>
+                        <input type="radio" name="opcion">Bachillerato Log Modalidad <input type="text" name="" id="">
+                    </ul>
+                    <ul>
+                        <input type="radio" name="opcion">Experimental
+                    </ul>
+                    <ul>
+                        <input type="radio" name="opcion">COU Opcion <input type="text" name="" id="">
+                    </ul>
+                    <ul>
+                        <input type="radio" name="opcion">F2P
+                    </ul>
+                    <ul>
+                        <input type="radio" name="opcion">Otros (especifique) <input type="text" name="" id="">
+
+                    </ul>
+                    <input type="radio" name="opcion">Prueba Libre
+                </ol>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset style="background-color: #C2B291;">
+            <legend style="background-color: #EAE3D1; border: solid;">Documentos adjuntados</legend>
+
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">Fotocopia DNI
+                    </td>
+                    <td>
+                        <input type="checkbox" name="" id="">Certificado Académico
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="" id="">Otros Documentos(especifique)
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Adjuntar documentos (puedes subir mas de un documento)
+                        <input type="file" name="" id="">
+                    </td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset style="background-color: #D6E4C3;">
+            <legend style="background-color: #EAE3D1; border: solid;">Personaliza</legend>
+
+            <table>
+                Código personalizado:
+                <input type="text" pattern="[A-Za-z]{3}-\d{4}" maxlength="7"> <br><br>
+                Grupo del curso:
+                <input type="text" name="grupo" pattern="A|B|AA|BB|ABA"> <br><br>
+                Idioma Certificado:
+                <select name="lista_idiomas" id="">
+                    <option value="Ingles">Ingles</option>
+                    <option value="Frances">Frances</option>
+                    <option value="Alemán">Aleman</option>
+                    <option value="Portugues">Portugues</option>
+                    <option value="Italiano">Italiano</option>
+                    <option value="Japones">Japones</option>
+                </select>
+                <br><br>
+                Certificación de idiomas:
+                <input type="text" name="certificacion" pattern="A1|A2|B1|B2|C1|C2">
+            </table>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset style="background-color: #EAE3D1;">
+            <legend style="background-color: #EAE3D1; border: solid;">Otros datos</legend>
+
+            Indique cualquier otra cosa a tener en cuenta:
+            <br>
+            <textarea style="text-align: center;" name="areatexto" placeholder="Dejanos tu comentario" rows="5"
+                cols="30" align="center"></textarea>
+
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Enviar Solicitud">
+        <input type="reset" value="Resetear">
+
+    </form>
+</body>
+
+</html>

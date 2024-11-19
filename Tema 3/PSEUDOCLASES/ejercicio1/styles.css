@@ -1,0 +1,9 @@
+tr:first-of-type {background-color: red; color: white;}
+/*Cada dos*/
+tr:nth-child(2n) {background-color: blue; color: white;}
+
+tr:last-child{background-color: red; color: white;}
+
+
+/* PARES
+tr:nth-child(even) {background-color: blue; color: white;}*/

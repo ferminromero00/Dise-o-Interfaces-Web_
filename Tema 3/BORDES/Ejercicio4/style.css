@@ -1,0 +1,49 @@
+p {
+    margin: 0;
+    padding: 10px;
+}
+
+div:nth-of-type(1) {
+    overflow: auto;
+    background-color: rgb(124, 185, 223);
+    border: solid;
+    width: 20%;
+}
+
+div:nth-of-type(1) p:nth-of-type(1) {
+    margin-top: 10%;
+}
+
+div:nth-of-type(2) {
+    width: 300px;
+    height: 170px;
+    background-color: #90ee90;
+    overflow-x: auto; /* Scroll horizontal */
+    overflow-y: hidden; /* Oculta el scroll vertical */
+    border: 2px solid black;
+    white-space: nowrap; /* Evita el salto de línea para forzar el scroll horizontal */
+    
+}
+
+div:nth-of-type(2) p {
+    margin-top: 10%;
+    overflow: auto;
+}
+
+div:nth-of-type(3) {
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #ffcccc;
+    overflow-y: scroll; /* Scroll visible en el eje Y */
+    overflow-x: hidden; /* Scroll oculto en el eje X */
+}
+
+div:nth-of-type(3) p {
+    margin-top: 10%;
+    overflow: auto;
+}
+
+
+

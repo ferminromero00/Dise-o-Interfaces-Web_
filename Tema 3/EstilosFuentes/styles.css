@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+}
+
+.dancing-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+    color: #333;
+    background-color: #fbe4c4;
+    padding: 10px;
+    border: 2px solid #ddd;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.custom-text {
+    text-indent: 20px;
+    text-align: justify;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    line-height: 1.5;
+    vertical-align: middle;
+    text-decoration: underline;
+}
+
+.formula {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.custom-button {
+    font-family: Arial, sans-serif;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #ffa500;
+}
+
+.custom-button:active {
+    background-color: #cc6e00;
+}
