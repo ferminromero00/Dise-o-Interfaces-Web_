@@ -1,0 +1,83 @@
+.cajas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.caja {
+    width: 180px;
+    height: 130px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 130px;
+    font-size: 18px;
+    font-family: Arial;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+
+.cajas2 {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: -140px;
+}
+
+
+.caja2 {
+    width: 180px;
+    height: 10px;
+    background-color: rgb(253, 8, 8);
+    color: white;
+    text-align: center;
+    line-height: 151px;
+    font-size: 18px;
+    font-family: Arial;
+    cursor: pointer;
+    transition: height 1s ease;
+}
+
+
+.c1 {
+    background-color: rgb(17, 57, 233);
+}
+
+.caja2:nth-child(1):hover {
+    z-index: 2;
+    height: 140px;
+    background-color: rgb(17, 57, 233);
+}
+
+.c2 {
+    background-color: rgb(164, 3, 251);
+}
+
+.caja2:nth-child(2):hover {
+    z-index: 2;
+    height: 140px;
+    background-color: rgb(164, 3, 251);
+}
+
+.c3 {
+    background-color: rgb(18, 123, 7);
+}
+
+.caja2:nth-child(3):hover {
+    z-index: 2;
+    height: 140px;
+    background-color: rgb(18, 123, 7);
+}
+
+.c4 {
+    background-color: rgb(244, 9, 9);
+}
+
+.caja2:nth-child(4):hover {
+    z-index: 2;
+    height: 140px;
+    background-color: rgb(244, 9, 9);
+}

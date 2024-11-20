@@ -1,0 +1,45 @@
+.clip {
+    background-color: hotpink;
+    width: 400px;
+    height: 400px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.clip2 {
+    background-color: hotpink;
+    width: 400px;
+    height: 400px;
+    clip-path: inset(20% 20% 20% 20% round 40px);
+}
+
+.clip3 {
+    background-color: hotpink;
+    width: 400px;
+    height: 400px;
+    clip-path: ellipse(25% 40% at top);
+    /*center, right, left, top, ...*/
+}
+
+.clip4 {
+    background-color: hotpink;
+    width: 400px;
+    height: 400px;
+    /*Triangulo*/
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.clip5 {
+    background-color: hotpink;
+    width: 400px;
+    height: 400px;
+    /*Triangulo al reves*/
+    clip-path: polygon(0 0, 100% 0 , 50% 100%);
+}
+
+.clip6 {
+    background-color: hotpink;
+    width: 400px;
+    height: 400px;
+    /*Rombo*/
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
