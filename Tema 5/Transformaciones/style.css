@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*minimo de la altura*/
+    min-height: 400vh;
+}
+
+.container {
+    outline: 2px solid crimson;
+    height: 500px;
+    width: 90%;
+    margin: 60px auto;
+}
+
+.element {
+    background-color: steelblue;
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    line-height: 130px;
+
+    /* transform: translate(300px); */
+    /* transform: translateY(100%); */
+    transform: translate(320px, 100%);
+    transition: transform 1s ease;
+}
+
+.container:hover .element {
+    transform: translate(0px);
+}
+
+.element1 {
+    background-color: steelblue;
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    line-height: 130px;
+
+    /* transform: rotate(90deg); */
+    /*    transform: rotate(0.5turn);*/
+
+    transform: rotate(20deg);
+    transition: transform 1s ease;
+}
+
+.container:hover .element1 {
+    transform: rotate(360deg);
+}
+
+
+.element2 {
+    background-color: steelblue;
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    line-height: 130px;
+
+    transform: scale(1);
+    transition: 1s ease;
+
+}
+
+.container:hover .element2 {
+    transform: scale(5);
+}
+
+.element3 {
+    background-color: steelblue;
+    width: 450px;
+    height: 450px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    line-height: 130px;
+
+    transform: skew(0deg);
+    transition: 1s ease;
+
+}
+
+.container:hover .element3 {
+    transform: skew(40deg);
+}
+
+.element4 {
+    background-color: steelblue;
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    line-height: 130px;
+
+    transition: 1s ease;
+
+}
+
+.container:hover .element4 {
+    transform: scale(2) translate(200px);
+}
+
+
+
+
+
+
+
+
+
+
+/**/
