@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cuadrado {
+    width: 400px;
+    height: 400px;
+    margin: 40px auto;
+    background-color: steelblue;
+    overflow: hidden;
+    /*nombre, tiempo de animacion, delay para empezar, tipo de animacion*/
+    animation: cuadrado_move 1s 2s ease;
+}
+
+@keyframes cuadrado_move {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.5);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+
+.spiderman {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    animation: move_spiderman 5s infinite;
+}
+
+@keyframes move_spiderman {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    25% {
+        transform: translateY(0) rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
