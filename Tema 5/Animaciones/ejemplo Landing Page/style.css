@@ -32,19 +32,47 @@ body {
     grid-column: 4/-1;
     grid-row: 1/-1;
     background-position: right top;
-    
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    animation: show 2s 3s ease-out forwards;
+}
+
+@keyframes show {
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.grid__title {
+    font-size: 3.5rem;
+}
+
+.grid__texts {
+    grid-row: 2/-2;
+    grid-column: 2/8;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    transform: translate(50%);
+    animation: show 2s forwards, mov 1s 2s forwards;
 }
 
 
+@keyframes mov {
+    to {
+        transform: translate(0);
+    }
+}
 
+.grid__title--transform {
+    font-family: Playfair;
+    font-size: 2.5rem;
+    transform: translate(19%);
 
+    animation: mov 1s 2s forwards;
 
-
-
-
-
-
-
+}
 
 
 
