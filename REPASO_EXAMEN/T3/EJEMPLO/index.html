@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Learning Guide</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #4f46e5, #3b82f6);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Navigation Menu with Dropdowns */
+        nav {
+            background: #2d3748;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background: #2d3748;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            flex-direction: column;
+            gap: 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Sections */
+        section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #4f46e5;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Table with Pseudo-classes */
+        .demo-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        .demo-table th,
+        .demo-table td {
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            text-align: left;
+        }
+
+        .demo-table tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .demo-table tr:hover {
+            background-color: #eef2ff;
+        }
+
+        /* Box Model Examples */
+        .box-model {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .box {
+            padding: 1rem;
+            border: 2px solid #4f46e5;
+            margin: 1rem;
+            border-radius: 8px;
+        }
+
+        .box.dashed { border-style: dashed; }
+        .box.dotted { border-style: dotted; }
+        .box.double { border-style: double; }
+
+        /* Cursor Examples */
+        .cursor-demo span {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            background: #f3f4f6;
+            border-radius: 4px;
+        }
+
+        .cursor-pointer { cursor: pointer; }
+        .cursor-wait { cursor: wait; }
+        .cursor-help { cursor: help; }
+        .cursor-not-allowed { cursor: not-allowed; }
+
+        /* Text and Font Properties */
+        .text-styles p {
+            margin-bottom: 1rem;
+        }
+
+        .font-serif { font-family: Georgia, serif; }
+        .font-mono { font-family: monospace; }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+
+        /* Colors and Backgrounds */
+        .color-boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .color-box {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* Gradients */
+        .gradient-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .gradient {
+            height: 150px;
+            border-radius: 8px;
+        }
+
+        .gradient-1 {
+            background: linear-gradient(45deg, #4f46e5, #3b82f6);
+        }
+
+        .gradient-2 {
+            background: radial-gradient(circle, #4f46e5, #3b82f6);
+        }
+
+        /* Positioning */
+        .position-demo {
+            position: relative;
+            height: 200px;
+            background: #f3f4f6;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .position-item {
+            position: absolute;
+            padding: 1rem;
+            background: #4f46e5;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .top-left { top: 0; left: 0; }
+        .top-right { top: 0; right: 0; }
+        .bottom-left { bottom: 0; left: 0; }
+        .bottom-right { bottom: 0; right: 0; }
+        .center {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Dictionary Effect */
+        .dictionary-term {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 1rem;
+        }
+
+        .dictionary-term::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #4f46e5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul ul {
+                position: static;
+                width: 100%;
+                display: none;
+            }
+
+            .box-model,
+            .color-boxes,
+            .gradient-examples {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS3 Learning Guide</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#selectors">Selectors</a>
+                <ul>
+                    <li><a href="#basic">Basic</a></li>
+                    <li><a href="#advanced">Advanced</a></li>
+                    <li><a href="#pseudo">Pseudo-classes</a></li>
+                </ul>
+            </li>
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#text">Text & Fonts</a></li>
+            <li><a href="#colors">Colors & Backgrounds</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="selectors">
+            <h2>Selectors & Pseudo-classes</h2>
+            <table class="demo-table">
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+                <tr>
+                    <td>Row 1, Cell 1</td>
+                    <td>Row 1, Cell 2</td>
+                    <td>Row 1, Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Cell 1</td>
+                    <td>Row 2, Cell 2</td>
+                    <td>Row 2, Cell 3</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="box-model">
+            <h2>Box Model & Cursors</h2>
+            <div class="box-model">
+                <div class="box dashed">Dashed Border</div>
+                <div class="box dotted">Dotted Border</div>
+                <div class="box double">Double Border</div>
+            </div>
+            <div class="cursor-demo">
+                <span class="cursor-pointer">Pointer</span>
+                <span class="cursor-wait">Wait</span>
+                <span class="cursor-help">Help</span>
+                <span class="cursor-not-allowed">Not Allowed</span>
+            </div>
+        </section>
+
+        <section id="text">
+            <h2>Text Properties & Fonts</h2>
+            <div class="text-styles">
+                <p style="font-size: 24px; font-weight: bold;">Large Bold Text</p>
+                <p style="font-style: italic;">Italic Text</p>
+                <p style="text-decoration: underline;">Underlined Text</p>
+                <p class="font-serif">Serif Font Text</p>
+                <p class="font-mono">Monospace Font Text</p>
+                <p class="text-shadow">Text with Shadow</p>
+            </div>
+        </section>
+
+        <section id="colors">
+            <h2>Colors & Backgrounds</h2>
+            <div class="color-boxes">
+                <div class="color-box" style="background-color: #4f46e5;">Primary</div>
+                <div class="color-box" style="background-color: #3b82f6;">Secondary</div>
+                <div class="color-box" style="background-color: #10b981;">Success</div>
+                <div class="color-box" style="background-color: #ef4444;">Danger</div>
+            </div>
+            <div class="gradient-examples">
+                <div class="gradient gradient-1"></div>
+                <div class="gradient gradient-2"></div>
+            </div>
+        </section>
+
+        <section id="positioning">
+            <h2>Positioning</h2>
+            <div class="position-demo">
+                <div class="position-item top-left">Top Left</div>
+                <div class="position-item top-right">Top Right</div>
+                <div class="position-item center">Center</div>
+                <div class="position-item bottom-left">Bottom Left</div>
+                <div class="position-item bottom-right">Bottom Right</div>
+            </div>
+        </section>
+
+        <section id="dictionary">
+            <h2>Dictionary Effect</h2>
+            <div class="dictionary-term">Term 1: Definition goes here</div>
+            <div class="dictionary-term">Term 2: Another definition</div>
+            <div class="dictionary-term">Term 3: Yet another definition</div>
+        </section>
+    </main>
+</body>
+</html>
