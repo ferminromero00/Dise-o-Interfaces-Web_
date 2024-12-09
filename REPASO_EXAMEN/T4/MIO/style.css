@@ -111,6 +111,7 @@ nav a:hover {
     width: 31.9%;
     margin-bottom: 1rem;
     position: relative;
+    overflow: hidden;
 }
 
 .caja__galeria img {
@@ -136,24 +137,198 @@ nav a:hover {
     right: 0;
     z-index: 1;
     color: white;
-    background-color: #5b6e90;
+    background-color: #292929;
+    padding: 1rem;
+    border-radius: 10px;
+    transform: translateY(100%);
+    opacity: 0.9;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria__div:hover>.galeria__cartel {
+    transform: translateY(0%);
+}
+
+/* GRID BASICS */
+
+.caja__grids {
+    display: grid;
+
+    grid-template-areas:
+        "area1 area1 area1 area1 area1 area1 area1"
+        "area2 area2 area3 area3 area3 area3 area3"
+        "area2 area2 area4 area4 area4 area4 area4"
+    ;
+}
+
+.grid {
+    background-color: #4958ea;
+    color: white;
     padding: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+.grid:nth-child(1) {
+    grid-area: area1;
+}
+
+.grid:nth-child(2) {
+    grid-area: area2;
+}
+
+.grid:nth-child(3) {
+    grid-area: area3;
+}
+
+.grid:nth-child(4) {
+    grid-area: area4;
+}
+
+/* GRID GALLERY */
+
+.caja__galeria-grid {
+    display: grid;
+    grid-template-areas: "carta1 carta2 carta3";
+    margin-top: 1rem;
+}
+
+.galeria__grid {
+    border-radius: 1rem;
+    margin-right: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.galeria__grid h1,
+.galeria__grid p {
+    z-index: 2;
+    position: absolute;
+    top: 78%;
+    background-color: white;
+    padding: 1rem 7.7321rem;
+    font-size: 0.8rem;
 }
 
 
+.galeria__grid img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 1rem;
+    z-index: 1;
+    position: relative;
+}
 
+/* GRID CALENDARIO */
 
+.schedule-grid {
+    display: grid;
+    grid-template-columns: auto repeat(5, 1fr);
+    gap: 1px;
+    background: #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
+.header {
+    background: #2d3748;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
 
+.time-slot {
+    background: #f8fafc;
+    padding: 1rem;
+    text-align: center;
+}
 
+.event {
+    background: #f8fafc;
+    padding: 1rem;
+    text-align: center;
+}
 
+.event.meeting {
+    background: #c7d2fe;
+}
 
+.event.workshop {
+    background: #bfdbfe;
+}
 
+.event.presentation {
+    background: #ddd6fe;
+}
 
+/* GRID FORMULARIO */
 
+.caja__contacto {
+    display: grid;
+    grid-template-areas:
+        "nombre email"
+        "subject subject"
+        "message message"
+    ;
+    margin-top: 1rem;
+    line-height: 2;
+}
 
+.contacto__subject>input {
+    width: 100%;
+    height: 5vh;
+    border-radius: 5px;
+    border: 0.2px solid black;
+}
 
+.contacto__nombre>input,
+.contacto__email>input {
+    width: 100%;
+    height: 5vh;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 0.2px solid black;
+}
 
+.contacto__nombre {
+    grid-area: nombre;
+    text-align: left;
+    margin-right: 1rem;
+}
+
+.contacto__email {
+    grid-area: email;
+    text-align: left;
+}
+
+.contacto__subject {
+    grid-area: subject;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contacto__message {
+    grid-area: message;
+    text-align: left;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 0px 0px 2px 0.4px blue;
+}
+
+textarea:focus{
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 0px 0px 2px 0.4px blue;
+}
 
 
 /*
