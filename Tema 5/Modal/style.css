@@ -105,3 +105,17 @@ input:not(:checked) ~ .cartel {
     transform: scale(0);
     transition-delay: 0s;
 }
+
+.show__close {
+    background-color: crimson;
+    color: white;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
