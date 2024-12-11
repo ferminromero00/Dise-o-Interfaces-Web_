@@ -70,3 +70,9 @@ nav ul li a {
     border-radius: 20px;
 
 }
+
+.caja {
+    display: flex;
+    justify-content: center;
+    margin-top: -4rem;
+}
