@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #191c32;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #05050a;
+    font-size: 1rem;
+    position: relative;
+}
+
+nav div {
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav>div>a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #1d12ed;
+    margin-top: 1.5rem;
+
+    transition: width 0.5s ease;
+}
+
+nav>div:nth-of-type(4)>a::before {
+    width: 0;
+}
+
+nav>div>a:hover::before {
+    width: 5rem;
+}
+
+nav>div:nth-of-type(4)>a:hover::before {
+    width: 3.2rem;
+}
+
+/* PORTADA */
+
+.portada {
+    color: white;
+    padding: 19.8rem;
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+.portada h1 {
+    animation: sombra_animacion infinite ease-in-out 1s alternate;
+}
+
+@keyframes sombra_animacion {
+    from {
+        text-shadow: 0 0 10px #4f46e5, 0 0 20px #4f46e5, 0 0 30px #4f46e5;
+
+    }
+
+    to {
+        text-shadow: 0 0 20px #4f46e5, 0 0 30px #4f46e5, 0 0 40px #4f46e5;
+    }
+}
+
+.triangulo {
+    width: 12rem;
+    height: 10rem;
+    background-color: rosybrown;
+    position: absolute;
+    margin: 1rem 4rem;
+    opacity: 0.5;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+    animation: mover_figuras infinite 3s ease-in-out alternate;
+}
+
+@keyframes mover_figuras {
+    from {
+        transform: translateX(0) rotate(0);
+    }
+
+    to {
+        transform: translateX(100%) rotate(330deg) translateY(200%);
+    }
+}
+
+.cuadrado {
+    width: 12rem;
+    height: 10rem;
+    background-color: rosybrown;
+    position: absolute;
+    margin: 15rem 20rem;
+    opacity: 0.5;
+
+    animation: mover_figuras2 infinite 3s ease-in-out alternate;
+}
+
+@keyframes mover_figuras2 {
+    from {
+        transform: translateX(0) rotate(0);
+    }
+
+    to {
+        transform: translateX(100%) rotate(230deg) translateY(100%);
+
+    }
+}
+
+.circulo {
+    width: 10rem;
+    height: 10rem;
+    background-color: rosybrown;
+    position: absolute;
+    margin: -10rem 1rem;
+    opacity: 0.5;
+
+    clip-path: circle(50% at 50% 50%);
+    animation: mover_figuras3 infinite 3s ease-in-out alternate;
+}
+
+@keyframes mover_figuras3 {
+    from {
+        transform: translateX(0) rotate(0);
+    }
+
+    to {
+        transform: translateX(100%) translateY(-100%);
+
+    }
+}
+
+/* FLIP CARD */
+
+.girar_carta {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+
+
+
+}
+
+.flip-card {
+    width: 40vw;
+    height: 50vh;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease-in-out;
+
+    max-width: 720px;
+    max-height: 60vh;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: #30354b;
+    font-size: 2rem;
+    color: white;
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+    /* Gira la parte trasera */
+}
+
+.flip-card:hover {
+    transform: rotateY(180deg);
+    /* Gira la tarjeta completa */
+}
+
+/* CUBO 3D */
+
+.cubo-3d {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    perspective: 1000px;
+
+}
+
+.cubo {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    transform-style: preserve-3d;
+
+    animation: rotate 5s infinite alternate;
+}
+
+.botton_cubo,
+.top_cubo,
+.left_cubo,
+.right_cubo,
+.back_cubo,
+.front_cubo {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background-color: #434c63;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.front_cubo {
+    transform: translateZ(10rem);
+}
+
+.back_cubo {
+    transform: rotateY(180deg) translateZ(10rem);
+}
+
+.left_cubo {
+    transform: rotateY(-90deg) translateZ(10rem);
+}
+
+.right_cubo {
+    transform: rotateY(90deg) translateZ(10rem);
+}
+
+.top_cubo {
+    transform: rotateX(90deg) translateZ(10rem);
+}
+
+.botton_cubo {
+    transform: rotateX(-90deg) translateZ(10rem);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+/* ANIMACIONES VARIAS */
+
+.animaciones {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cuadro_animaciones {
+    padding: 15rem 25rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rebotar {
+    padding: 2rem;
+    background-color: #1d12ed;
+    clip-path: circle(50% at 50% 50%);
+    
+    transform: translate(-50%, 0);
+
+
+    animation: botar 0.3s infinite alternate ease;
+}
+
+@keyframes botar {
+    from {
+        transform: translate(-50%,0);
+    }
+
+    to {
+        transform: translate(-50%, -100%);
+    }
+}  
+
+.bola-vibrar {
+    padding: 4rem;
+    background-color: purple;
+    clip-path: circle(50% at 50% 50%);
+
+    box-shadow: 0px 0px 0px 30px purple;
+
+    animation: vibrar 0.3s infinite alternate ease;
+}
+
+@keyframes vibrar {
+    from {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.7);
+    }
+    to {
+        transform: scale(1);
+        box-shadow: 0 0 0 30px rgba(139, 92, 246, 0);
+    }
+}
+
+
+.cuadrado-cambiar {
+    padding: 4rem;
+    background-color: rgb(219, 28, 168);
+
+    animation: cambiar 8s infinite alternate ease-in-out;
+}
+
+@keyframes cambiar {
+    0% {
+        border-radius: 0;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 50%;
+        transform: rotate(90deg);
+    }
+    50% {
+        border-radius: 0;
+        transform: rotate(180deg);
+    }
+    75% {
+        border-radius: 50% 0 50% 0;
+        transform: rotate(270deg);
+    }
+}
+
+
+/*
