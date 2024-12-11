@@ -52,7 +52,7 @@
 
 .letras_back>div:nth-of-type(2),
 .letras_back>div:nth-of-type(4) {
-    transition: transform 1s ease-out;
+    transition: transform 1s ease-in-out;
     z-index: 1;
 }
 
