@@ -301,7 +301,7 @@ nav>div:nth-of-type(4)>a:hover::before {
 .rebotar {
     padding: 2rem;
     background-color: #1d12ed;
-    clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50%);
     
     transform: translate(-50%, 0);
 

@@ -99,4 +99,5 @@ body {
 .img-8 {
     grid-column: span 3;
     grid-row: span 1;
+    object-fit: cover;
 }
