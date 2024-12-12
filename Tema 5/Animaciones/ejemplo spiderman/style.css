@@ -11,7 +11,7 @@
     background-color: steelblue;
     overflow: hidden;
     /*nombre, tiempo de animacion, delay para empezar, tipo de animacion*/
-    animation: cuadrado_move 1s 2s ease;
+    animation: cuadrado_move 1s 2s ease alternate;
 }
 
 @keyframes cuadrado_move {

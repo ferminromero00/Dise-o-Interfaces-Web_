@@ -104,3 +104,23 @@ body {
     text-align: center;
     transform: translateZ(30px);
 }
+
+@media (max-width: 1000px) {
+    .coche__tarjeta {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .coche__tarjeta {
+        height: 140vh;
+    }
+
+    .coche__imagen {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+        transition: all 0.3s ease-in-out;
+    }
+}

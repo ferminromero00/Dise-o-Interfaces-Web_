@@ -37,6 +37,8 @@ body {
 .imagen {
     position: relative;
     overflow: hidden;
+    max-height: 40vh;
+
 }
 
 .imagen img {
@@ -55,7 +57,7 @@ body {
 
 .show {
     width: 90%;
-    height: 70%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.65);
     position: absolute;
     display: flex;
