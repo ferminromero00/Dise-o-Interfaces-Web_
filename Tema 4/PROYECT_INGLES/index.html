@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <section class="cabecera__contenido">
+            <article class="cabecera__texto">
+                <h1 class="cabecera__titulo">SHOE STORE</h1>
+                <h2 class="cabecera__subtitulo">The best prices in all of Spain</h2>
+            </article>
+            <figure class="cabecera__figura">
+                <img src="fotos/header.jpg" alt="Header Image" class="cabecera__imagen">
+            </figure>
+        </section>
+    </header>
+
+    <main>
+        <section class="destacados">
+            <section class="categorias">
+                <h2 class="destacados__titulo">Featured Products</h2>
+
+                <h2 class="categorias__titulo">Categories</h2>
+                <div class="categorias__contenedor">
+                    <div class="categoria">
+                        <i class="fas fa-running categoria__icono"></i>
+                        <h3 class="categoria__titulo">Sports</h3>
+                    </div>
+                    <div class="categoria">
+                        <i class="fas fa-shoe-prints categoria__icono"></i>
+                        <h3 class="categoria__titulo">Casual</h3>
+                    </div>
+                    <div class="categoria">
+                        <i class="fas fa-briefcase categoria__icono"></i>
+                        <h3 class="categoria__titulo">Formal</h3>
+                    </div>
+                </div>
+            </section>
+            <div class="destacados__div">
+                <article class="producto">
+                    <img src="fotos/deportivas.jpg" alt="Sports Shoe" class="tarjeta-producto__imagen">
+                    <h3 class="tarjeta-producto__titulo">Sports Shoes</h3>
+                    <p class="tarjeta-producto__precio">89.99€</p>
+                    <button class="tarjeta-producto__boton">Buy</button>
+                </article>
+                <article class="producto">
+                    <img src="fotos/casual.jpg" alt="Casual Shoe" class="tarjeta-producto__imagen">
+                    <h3 class="tarjeta-producto__titulo">Casual Shoes</h3>
+                    <p class="tarjeta-producto__precio">69.99€</p>
+                    <button class="tarjeta-producto__boton">Buy</button>
+                </article>
+                <article class="producto">
+                    <img src="fotos/formales.jpg" alt="Formal Shoe" class="tarjeta-producto__imagen">
+                    <h3 class="tarjeta-producto__titulo">Formal Shoes</h3>
+                    <p class="tarjeta-producto__precio">99.99€</p>
+                    <button class="tarjeta-producto__boton">Buy</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <h2 class="contacto__titulo">Contact</h2>
+            <form class="contacto__formulario">
+                <input type="text" placeholder="Name" class="contacto__entrada">
+                <input type="email" placeholder="Email" class="contacto__entrada">
+                <textarea placeholder="Message" class="contacto__area-texto"></textarea>
+                <button type="submit" class="contacto__boton">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__contenido">
+            <div class="footer__seccion">
+                <h3 class="footer__titulo">Contact</h3>
+                <p>Email: info@shoestore.es</p>
+                <p>Phone: 123-456-789</p>
+            </div>
+            <div class="footer__seccion">
+                <h3 class="footer__titulo">Follow Us</h3>
+                <div class="footer__redes">
+                    <a href="#" class="footer__enlace"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer__enlace"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__enlace"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__inferior">
+            <p>&copy; 2024 Shoe Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
