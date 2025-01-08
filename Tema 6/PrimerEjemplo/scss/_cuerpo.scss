@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: $text-colors;
+}
+
+header {
+    background-color: get-color(1);
+    padding: 2rem;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+        color: $text-colors;
+    }
+}
+
+main {
+    background-color: get-color(2);
+    padding: 1rem;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+        color: $text-colors;
+    }
+}
+
+footer {
+    background-color: get-color(3);
+    padding: 1rem;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+        color: $text-colors;
+    }
+}
