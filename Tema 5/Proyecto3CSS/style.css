@@ -785,6 +785,7 @@ body {
         color: #0373bd;
         font-size: 0.9rem;
     }
+
 }
 
 @media (max-width: 1013px) {
@@ -1127,6 +1128,18 @@ body {
     .articulos__boton {
         margin-top: 5rem;
     }
+
+    .banner,
+    .tarjetas,
+    .cabecera,
+    .pie,
+    .articulos__boton {
+        width: 128%;
+    }
+
+    .menu-derecha {
+        margin-right: -7rem;
+    }
 }
 
 @media (max-width:598px) {
@@ -1138,6 +1151,47 @@ body {
 
     .menu__patrocinadores h1{
         width: 9.6rem;
+    }
+
+    .articulos__boton {
+        margin-top: 3rem;
+    }
+
+    .banner,
+    .tarjetas,
+    .cabecera,
+    .pie,
+    .articulos__boton {
+        width: 130%;
+    }
+
+    .menu-derecha {
+        margin-right: -4.8rem;
+    }
+
+    .login__caja {
+        width: 11rem;
+    }
+
+    .login__boton_1,
+    .login__boton_2 {
+        margin-left: 1rem;
+    }
+
+    .menu__redes-sociales h1 {
+        margin-left: 4.4rem;
+    }
+
+    .menu__patrocinadores h1 {
+        margin-left: 3rem;
+    }
+
+    .patrocinadores__caja {
+        margin-left: 2rem;
+    }
+
+    .redes__caja {
+        margin-left: 1.7rem;
     }
 }
 
