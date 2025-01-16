@@ -7,7 +7,11 @@ body {
 .caja {
   width: 100px;
   height: 100px;
-  margin-bottom: 1rem;
+  margin: 10px;
+  transition: transform 0.4s ease;
+}
+.caja:hover {
+  transform: scale(1.1);
 }
 .caja p {
   padding: 1rem;
