@@ -1,0 +1,8 @@
+$color1: #2596be;
+
+@mixin centrar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+

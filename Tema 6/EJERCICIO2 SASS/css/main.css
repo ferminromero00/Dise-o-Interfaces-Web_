@@ -1,3 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+.caja {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+.caja p {
+  padding: 1rem;
+  margin-top: -0.4rem;
+}
+
+.box-1 {
+  background-color: #2596be;
+  border-color: rgb(28.6872246696, 116.2995594714, 147.3127753304);
+}
+
+.box-2 {
+  background-color: rgb(60.8149779736, 176.3039647577, 217.1850220264);
+  border-color: darken #2596be, 15%;
+}
+
+.box-3 {
+  background-color: rgb(103.5022026432, 193.6035242291, 225.4977973568);
+  border-color: rgb(28.6872246696, 116.2995594714, 147.3127753304);
+}
+
+.box-4 {
+  background-color: rgb(146.1894273128, 210.9030837004, 233.8105726872);
+  border-color: rgb(20.3744493392, 82.5991189427, 104.6255506608);
+}
+
+.box-5 {
+  background-color: rgb(231.563876652, 245.5022026432, 250.436123348);
+  border-color: rgb(12.0616740088, 48.8986784141, 61.9383259912);
+}
 
 /*# sourceMappingURL=main.css.map */
