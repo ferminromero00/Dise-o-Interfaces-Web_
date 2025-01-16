@@ -26,9 +26,7 @@ nav ul li a {
 .cards .card {
     background-color: $color-claro;
     width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flexCenter;
     border-radius: 20px;
     box-shadow: 3px 3px 5px 0px $rojo-claro;
 }
