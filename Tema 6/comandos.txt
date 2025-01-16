@@ -1,8 +1,0 @@
-sass --watch .\scss\style.scss .\css\style.css 
-sass --watch .\scss\main.scss .\css\main.css
-
-//package.json
-npm init -y
-
-//Instalar sass modo desarrollador
-npm install -D sass
