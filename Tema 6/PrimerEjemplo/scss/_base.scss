@@ -1,0 +1,13 @@
+/* Colores */
+$colors: (
+    #3498db,
+    #2ecc71,
+    #1abc9c
+);
+/*Varible texto*/
+$text-colors : #fff;
+
+/* Definir una funcion */
+@function get-color($index) {
+    @return nth($colors , $index );
+}
