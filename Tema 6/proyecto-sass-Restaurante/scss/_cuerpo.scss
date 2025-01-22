@@ -24,7 +24,8 @@ body {
             height: 100vh;
             background-color: $color-dark;
             position: fixed;
-            left: 0;
+            left: -50vw;
+            transition: left 0.8s;
 
             .left-img {
                 position: absolute;
@@ -55,12 +56,57 @@ body {
             height: 100vh;
             background-color: #1f1d1d;
             position: fixed;
-            right: 0;
-            @include flexLayout
+            right: -50vw;
+            @include flexLayout;
+            transition: right 0.8s;
+
+            .nav-list {
+                &-item {
+                    list-style: none;
+                }
+
+                &-link {
+                    font-family: $font-dancingScript;
+                    font-size: 50px;
+                    @include textStyle(capitalize);
+                    color: $color-secondary;
+                    text-decoration: none;
+                    display: block;
+                    margin: 20px;
+                    text-align: center;
+
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+            }
         }
     }
-}
 
+    .checkbox:checked~.navbar-navigation .navbar-navigation-left {
+        left: 0;
+    }
+
+    .checkbox:checked~.navbar-navigation .navbar-navigation-right {
+        right: 0;
+    }
+
+    .checkbox:checked~.hamburguer-menu .menu {
+        transform: rotateZ(90deg);
+    }
+
+    .checkbox:checked~.hamburguer-menu .menu-line-1 {
+        transform: rotateZ(-40deg);
+    }
+
+    .checkbox:checked~.hamburguer-menu .menu-line-2 {
+        opacity: 0;
+    }
+
+    .checkbox:checked~.hamburguer-menu .menu-line-3 {
+        transform: rotateZ(40deg);
+    }
+}
 
 .header {
     width: 100%;
@@ -95,6 +141,14 @@ body {
         text-align: center;
         @include centering(50%);
     }
+
+    @media (max-width:1000px) {
+        height: 80vh;
+    }
+
+    @media (max-width:500px) {
+        height: 60vh;
+    }
 }
 
 .about-us {
@@ -103,12 +157,33 @@ body {
     align-items: center;
     margin: 100px 0px;
 
+    @media (max-width:1000px) {
+        height: 60vh;
+    }
+
+    @media (max-width:500px) {
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     &-left {
         width: 40%;
+
+        @media (max-width:500px) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
 
         img {
             width: 100%;
             opacity: 0.7;
+
+            @media (max-width:500px) {
+                width: 50%;
+            }
         }
     }
 
@@ -119,8 +194,21 @@ body {
         align-items: center;
         padding: 0 100px;
 
+        @media (max-width:1000px) {
+            width: 100%;
+            padding: 0 40px;
+        }
+
+        @media (max-width:500px) {
+            width: 100%;
+        }
+
         .stars {
             margin: 30px 0;
+
+            @media (max-width:1000px) {
+                margin: 0 15px;
+            }
 
             .star {
                 font-size: 15px;
