@@ -1,0 +1,18 @@
+.row {
+    margin-top: 20px;
+    height: 13px;
+}
+
+.col {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+.contenido {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid red;
+}
