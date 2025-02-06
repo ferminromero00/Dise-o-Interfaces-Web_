@@ -23,6 +23,4 @@ en el style.css -> @import "tailwindcss";
 
 npm install -D prettier prettier-plugin-tailwindcss
 
-
-
 npm start
