@@ -377,7 +377,7 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
-    --color-pasion: #a73b3c,;
+    --color-pasion: #a73b3c;
   }
 }
 @layer base {
