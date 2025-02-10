@@ -35,3 +35,7 @@
 a:target, a:focus {
    color: var(--azul-seleccion) !important;
 }
+
+ul {
+   list-style: none;
+}

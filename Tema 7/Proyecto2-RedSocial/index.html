@@ -13,23 +13,41 @@
 
 <body>
 
-    <nav class="navbar navbar-dark bg-dark-custom">
-        <div class="container-fluid d-flex align-items-center justify-content-start col-sm">
-            <i class="bi bi-bootstrap-fill fs-1 text-white me-3"></i>
-            <div class="bg-dark-custom2 rounded-pill p-1 d-flex align-items-center">
-                <div class="position-relative">
-                    <i class="bi bi-search text-white fs-4 position-absolute ms-2"></i>
-                    <input class="form-control ps-5 buscador" type="search" placeholder="Buscar">
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <a href="#1"><i class="bi bi-house-door-fill text-white p-4 fs-5"></i></a>
-                <a href="#2"><i class="bi bi-flag text-white p-4 fs-5"></i></a>
-                <a href="#3"><i class="bi bi-play-btn text-white p-4 fs-5"></i></a>
-                <a href="#4"><i class="bi bi-shop-window text-white p-4 fs-5"></i></a>
-            </div>
-        </div>
-    </nav>
+    <header>
+
+        <nav class="mi-navbar row bg-color-light mb-0 bg-dark-custom">
+          <div class="col-6 col-md-8 col-lg-4 d-flex align-items-center div-izquierda-nav">
+            <a class="color-w p-0 fs-2 me-3" href="#"><i class="bi bi-bootstrap-fill"></i></a>
+                  <form class="d-none d-sm-block" role="search">
+                      <input class="form-control me-2 bg-sec-color search pl-4" type="search" placeholder="Buscar" aria-label="Search">
+                  </form>
+          </div>
+
+          <ul class="col-md-12 col-lg-4 d-flex justify-content-evenly align-items-center mb-0 order-1 order-lg-0 iconos">
+            <li class="color-w nav-li-central fs-5"><i class="bi bi-house-door-fill"></i></li>
+            <li class="color-w nav-li-central fs-5"><i class="bi bi-flag"></i></li>
+            <li class="color-w nav-li-central fs-5"><i class="bi bi-play-btn"></i></li>
+            <li class="color-w nav-li-central fs-5"><i class="bi bi-shop-window"></i></li>
+            <li class="color-w nav-li-central fs-5"><i class="bi bi-people"></i></li>
+          </ul>
+
+          <ul class="ul-derecha col-6 col-md-4 col-lg-4 d-flex justify-content-end align-items-center">
+            <li class="d-flex align-items-center me-3">
+              <img class="img-perfil me-2" src="" alt="perfil">
+              <p class="color-w usuario d-flex align-items-center">Bego</p>
+            </li>
+            <li class="d-flex align-items-center justify-content-center ">
+              <a class="color-w" href="#"><i class="bi bi-grid-fill"></i></a>
+            </li>
+            <li class="d-flex align-items-center justify-content-center">
+              <a class="color-w" href="#"><i class="bi bi-chat-fill"></i></a>
+            </li>
+            <li class="d-flex align-items-center justify-content-center">
+              <a class="color-w" href="#"><i class="bi bi-bell-fill"></i></a>
+            </li>
+          </ul>
+        </nav>
+  </header>
 
 
 
