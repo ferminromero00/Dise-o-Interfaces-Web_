@@ -2,7 +2,9 @@
   --fondo-oscuro: rgb(24, 25, 26);
   --fondo-oscuro-claro: rgb(39, 40, 41);
   --letra-blanca: white;
+  --letra-oscura-clara: rgb(39, 40, 41);
   --azul-seleccion: rgb(45, 136, 255);
+  --card: rgb(36, 37, 38);
 }
 
 .bg-dark-custom {
@@ -19,9 +21,8 @@
 }
 
 .buscador {
-  background-color: var(--fondo-oscuro-claro) !important;
+  background-color: rgb(58, 59, 60) !important;
   height: 43px !important;
-
 }
 
 .buscador::placeholder {
@@ -56,4 +57,20 @@ ul {
 .ico-derecha {
   width: 50px;
   height: 50px;
+}
+
+.buscador2::placeholder {
+  color: var(--letra-oscura-clara) !important;
+}
+
+.bg-cards {
+  background-color: var(--card);
+}
+
+.card-tamaño {
+  width: 38%;
+}
+
+.gap-5-custom {
+  gap: 90px; 
 }
