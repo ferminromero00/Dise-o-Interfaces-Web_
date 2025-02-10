@@ -1,60 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina Principal</title>
-    <link rel="shortcut icon" href="img/twitter.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-</head>
+    <link rel="shortcut icon" href="img/twitter.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
+      <nav class="row bg-dark-custom">
+        <div class="col-6 col-md-8 col-lg-4 d-flex align-items-center">
+          <a class="p-0 fs-1 me-3 ms-3" href="#"
+            ><i class="bi bi-bootstrap-fill"></i
+          ></a>
+          <form class="d-none d-sm-block" role="search">
+            <input
+              class="form-control rounded-pill buscador border-0"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+          </form>
+        </div>
 
-        <nav class="mi-navbar row bg-color-light mb-0 bg-dark-custom">
-          <div class="col-6 col-md-8 col-lg-4 d-flex align-items-center div-izquierda-nav">
-            <a class="color-w p-0 fs-2 me-3" href="#"><i class="bi bi-bootstrap-fill"></i></a>
-                  <form class="d-none d-sm-block" role="search">
-                      <input class="form-control me-2 bg-sec-color search pl-4" type="search" placeholder="Buscar" aria-label="Search">
-                  </form>
-          </div>
+        <ul
+          class="col-md-12 col-lg-4 d-flex justify-content-evenly align-items-center mb-0 order-1 order-lg-0 iconos"
+        >
+          <li class="fs-5"><i class="bi bi-house-door-fill"></i></li>
+          <li class="fs-5"><i class="bi bi-flag"></i></li>
+          <li class="fs-5"><i class="bi bi-play-btn"></i></li>
+          <li class="fs-5"><i class="bi bi-shop-window"></i></li>
+          <li class="fs-5"><i class="bi bi-people"></i></li>
+        </ul>
 
-          <ul class="col-md-12 col-lg-4 d-flex justify-content-evenly align-items-center mb-0 order-1 order-lg-0 iconos">
-            <li class="color-w nav-li-central fs-5"><i class="bi bi-house-door-fill"></i></li>
-            <li class="color-w nav-li-central fs-5"><i class="bi bi-flag"></i></li>
-            <li class="color-w nav-li-central fs-5"><i class="bi bi-play-btn"></i></li>
-            <li class="color-w nav-li-central fs-5"><i class="bi bi-shop-window"></i></li>
-            <li class="color-w nav-li-central fs-5"><i class="bi bi-people"></i></li>
-          </ul>
+        <ul
+          class="col-6 col-md-4 col-lg-4 d-flex justify-content-end align-items-center"
+        >
+          <li class="d-flex align-items-center me-3">
+            <img
+              class="me-2 perfil rounded-pill mt-3"
+              src="img/persona4.jpg"
+              alt="perfil"
+            />
+            <p class="d-flex align-items-center text-white nom-perfil">
+              Fermin
+            </p>
+          </li>
+          <li
+            class="d-flex mt-3 me-2 align-items-center justify-content-center rounded-pill bg-secondary bg-opacity-25 p-2 ico-derecha"
+          >
+            <a href="#"><i class="bi bi-grid-fill text-white fs-4"></i></a>
+          </li>
+          <li
+            class="d-flex mt-3 me-2 align-items-center justify-content-center rounded-pill bg-secondary bg-opacity-25 p-2 ico-derecha"
+          >
+            <a href="#"><i class="bi bi-chat-fill text-white fs-4"></i></a>
+          </li>
+          <li
+            class="d-flex mt-3 me-2 align-items-center justify-content-center rounded-pill bg-secondary bg-opacity-25 p-2 ico-derecha"
+          >
+            <a href="#"><i class="bi bi-bell-fill text-white fs-4"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-          <ul class="ul-derecha col-6 col-md-4 col-lg-4 d-flex justify-content-end align-items-center">
-            <li class="d-flex align-items-center me-3">
-              <img class="img-perfil me-2" src="" alt="perfil">
-              <p class="color-w usuario d-flex align-items-center">Bego</p>
-            </li>
-            <li class="d-flex align-items-center justify-content-center ">
-              <a class="color-w" href="#"><i class="bi bi-grid-fill"></i></a>
-            </li>
-            <li class="d-flex align-items-center justify-content-center">
-              <a class="color-w" href="#"><i class="bi bi-chat-fill"></i></a>
-            </li>
-            <li class="d-flex align-items-center justify-content-center">
-              <a class="color-w" href="#"><i class="bi bi-bell-fill"></i></a>
-            </li>
-          </ul>
-        </nav>
-  </header>
-
-
-
-
-
+    <main class="w-100 vh-100 bg-dark-custom2">
+      <ul>
+        <li class="d-flex align-items-center">
+          <img
+            class="me-2 perfil rounded-pill mt-3"
+            src="img/persona4.jpg"
+            alt="perfil"
+          />
+          <p class="d-flex align-items-center text-white nom-perfil">Fermin</p>
+        </li>
+      </ul>
+    </main>
 
     <script src="js/bootstrap.bundle.js"></script>
-</body>
-
+  </body>
 </html>

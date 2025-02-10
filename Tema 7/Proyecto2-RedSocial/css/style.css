@@ -1,41 +1,59 @@
 :root {
-   --fondo-oscuro: rgba(36, 37, 38, 255);
-   --fondo-oscuro-claro: rgb(58, 59, 60);
-   --letra-blanca: white;
-   --azul-seleccion: rgb(45, 136, 255);
+  --fondo-oscuro: rgb(24, 25, 26);
+  --fondo-oscuro-claro: rgb(39, 40, 41);
+  --letra-blanca: white;
+  --azul-seleccion: rgb(45, 136, 255);
 }
 
 .bg-dark-custom {
-   background-color: var(--fondo-oscuro);
+  background-color: var(--fondo-oscuro-claro);
 }
 
 .bg-dark-custom2 {
-   background-color: var(--fondo-oscuro-claro);
-   width: 180px;
+  background-color: var(--fondo-oscuro);
+  width: 180px;
 }
 
 .tamaño {
-   width: 200px !important;
+  width: 200px !important;
 }
 
 .buscador {
-   background-color: transparent !important;
-   border: 0 !important;
-   color: var(--letra-blanca) !important;
+  background-color: var(--fondo-oscuro-claro) !important;
+  height: 43px !important;
+
 }
 
 .buscador::placeholder {
-   color: var(--letra-blanca) !important;
+  color: var(--letra-blanca) !important;
 }
 
 .iconos {
-   color: var(--letra-blanca);
+  color: var(--letra-blanca);
 }
 
-a:target, a:focus {
-   color: var(--azul-seleccion) !important;
+a:target,
+a:focus {
+  color: var(--azul-seleccion) !important;
 }
 
 ul {
-   list-style: none;
+  list-style: none;
+}
+
+.perfil {
+  width: 40px;
+}
+
+.nom-perfil {
+  margin-top: 30px;
+}
+
+.iconos {
+  margin-top: 17px;
+}
+
+.ico-derecha {
+  width: 50px;
+  height: 50px;
 }
