@@ -5,6 +5,7 @@
   --letra-oscura-clara: rgb(39, 40, 41);
   --azul-seleccion: rgb(45, 136, 255);
   --card: rgb(36, 37, 38);
+  --azul-icono: rgb(45, 136, 255);
 }
 
 .bg-dark-custom {
@@ -90,3 +91,21 @@ ul {
 .fto {
   width: 17%; 
 }
+
+.icon-target {
+  color: var(--azul-icono);
+  position: relative;
+}
+
+.icon-target::after {
+  content: "";
+  display: block;
+  width: 80px; 
+  height: 4px;
+  background-color: var(--azul-icono);
+  position: absolute;
+  bottom: -12px; /* Ajusta la distancia del borde respecto al icono */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
