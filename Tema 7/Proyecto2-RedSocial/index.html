@@ -14,13 +14,13 @@
   </head>
 
   <body>
-    <header>
+    <header class="sticky-top">
       <nav class="row bg-dark-custom">
         <div class="col-6 col-md-8 col-lg-4 d-flex align-items-center">
           <a class="p-0 fs-1 me-3 ms-3" href="#"
-            ><i class="bi bi-bootstrap-fill"></i
+            ><i class="bi bi-bootstrap-fill text-white"></i
           ></a>
-          <form class="d-none d-sm-block" role="search">
+          <form class="d-none d-sm-block col-xl-6 col-10" role="search">
             <input
               class="form-control rounded-pill buscador border-0 mt-1 text-white"
               type="search"
@@ -31,13 +31,13 @@
         </div>
 
         <ul
-          class="col-md-12 col-lg-4 d-flex justify-content-evenly align-items-center mb-0 order-1 order-lg-0 iconos"
+          class="col-lg-4 p-2 d-flex justify-content-center align-items-center mb-0 order-1 order-lg-0 iconos"
         >
-          <li class="fs-5"><i class="bi bi-house-door-fill"></i></li>
-          <li class="fs-5"><i class="bi bi-flag"></i></li>
-          <li class="fs-5"><i class="bi bi-play-btn"></i></li>
-          <li class="fs-5"><i class="bi bi-shop-window"></i></li>
-          <li class="fs-5"><i class="bi bi-people"></i></li>
+          <li class="fs-1 ms-5"><i class="bi bi-house-door-fill"></i></li>
+          <li class="fs-1 ms-5"><i class="bi bi-flag"></i></li>
+          <li class="fs-1 ms-5"><i class="bi bi-play-btn"></i></li>
+          <li class="fs-1 ms-5"><i class="bi bi-shop-window"></i></li>
+          <li class="fs-1 ms-5 me-5"><i class="bi bi-people me-2"></i></li>
         </ul>
 
         <ul
@@ -73,7 +73,7 @@
     </header>
 
     <main class="w-100 bg-dark-custom2">
-      <aside class="w-25 position-absolute">
+      <aside class="w-25 position-absolute d-none d-lg-block">
         <ul class="text-white">
           <li class="d-flex align-items-center">
             <img
@@ -160,7 +160,44 @@
         </section>
       </aside>
 
-      <section class="mx-auto p-3 card-tamaño">
+      <aside
+        class="position-absolute end-0 bloq-derecha me-3 d-none d-lg-block"
+      >
+        <p class="text-white fs-4 mt-3">Publicidad</p>
+        <section class="d-flex flex-wrap justify-content-center">
+          <img src="img/ad1.jpg" alt="" class="w-100 rounded-2 mb-2 publi" />
+          <img src="img/ad2.jpg" alt="" class="w-100 rounded-2 publi" />
+        </section>
+        <section>
+          <p class="text-white fs-4 mt-3">Contactos</p>
+          <section class="container justify-content-start">
+            <ul class="text-white tamaño-letras">
+              <li class="mb-3">
+                <img
+                  src="img/persona2.jpg"
+                  class="fto rounded-5 me-3"
+                />Alejandro Doe
+              </li>
+              <li class="mb-3">
+                <img
+                  src="img/persona3.jpg"
+                  class="fto rounded-5 me-3"
+                />Stephanie Doe
+              </li>
+              <li class="mb-3">
+                <img src="img/persona4.jpg" class="fto rounded-5 me-3" />Cesar
+                Doe
+              </li>
+              <li class="mb-3">
+                <img src="img/persona5.jpg" class="fto rounded-5 me-3" />Manual
+                Doe
+              </li>
+            </ul>
+          </section>
+        </section>
+      </aside>
+
+      <section class="mx-auto p-3 col-xl-5 col-md-10"> 
         <!-- Caja para escribir una nueva publicación -->
         <div class="bg-dark-custom3 p-4 rounded-2 bg-cards">
           <div class="d-flex">
