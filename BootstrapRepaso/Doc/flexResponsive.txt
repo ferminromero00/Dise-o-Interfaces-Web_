@@ -1,0 +1,5 @@
+tamaños para el flex
+<div class="d-flex flex-sm-column flex-md-row flex-lg-column">
+  <div class="p-2 bg-primary text-white">Elemento 1</div>
+  <div class="p-2 bg-secondary text-white">Elemento 2</div>
+</div>

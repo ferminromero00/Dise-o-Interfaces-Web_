@@ -1,0 +1,26 @@
+<div class="m-3">Márgenes de tamaño 3 en todos los lados</div>
+<div class="mt-5">Márgenes grandes solo en la parte superior</div>
+<div class="mb-2">Márgenes pequeños solo en la parte inferior</div>
+<div class="mx-4">Márgenes horizontales medios (izquierda y derecha)</div>
+<div class="my-2">Márgenes pequeños verticales (arriba y abajo)</div>
+
+<div class="m-n3">Márgenes negativos de tamaño 3 en todos los lados</div>
+<div class="mt-n5">Márgenes negativos grandes solo en la parte superior</div>
+<div class="mb-n2">Márgenes negativos pequeños solo en la parte inferior</div>
+<div class="mx-n4">Márgenes negativos horizontales medios (izquierda y derecha)</div>
+<div class="my-n2">Márgenes negativos pequeños verticales (arriba y abajo)</div>
+
+
+
+
+<div class="p-3">Relleno de tamaño 3 en todos los lados</div>
+<div class="pt-4">Relleno grande solo en la parte superior</div>
+<div class="pb-1">Relleno pequeño solo en la parte inferior</div>
+<div class="px-2">Relleno pequeño solo en los lados izquierdo y derecho</div>
+<div class="py-5">Relleno grande en los lados superior e inferior</div>
+
+<div class="p-n3">Relleno negativo de tamaño 3 en todos los lados</div>
+<div class="pt-n4">Relleno negativo grande solo en la parte superior</div>
+<div class="pb-n1">Relleno negativo pequeño solo en la parte inferior</div>
+<div class="px-n2">Relleno negativo pequeño solo en los lados izquierdo y derecho</div>
+<div class="py-n5">Relleno negativo grande en los lados superior e inferior</div>

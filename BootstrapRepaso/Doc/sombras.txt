@@ -1,0 +1,4 @@
+<div class="shadow">Sombra suave</div>
+<div class="shadow-sm">Sombra pequeña</div>
+<div class="shadow-lg">Sombra grande</div>
+<div class="shadow-none">Sin sombra</div>

@@ -1,0 +1,10 @@
+COLUMNAS
+
+Espacio entre columnas 
+<div class="container">
+  <div class="row g-3">
+    <div class="col bg-primary">Columna 1</div>
+    <div class="col bg-secondary">Columna 2</div>
+    <div class="col bg-warning">Columna 3</div>
+  </div>
+</div>
