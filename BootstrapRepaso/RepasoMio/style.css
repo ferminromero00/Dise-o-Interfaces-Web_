@@ -1,0 +1,74 @@
+/* Inicialmente, ambos divs están fuera de la pantalla */
+.a {
+  background-color: rgb(38, 38, 38) !important;
+  transform: translateX(-100%); /* Mueve la izquierda fuera de la pantalla */
+  transition: transform 0.5s ease-in-out;
+  z-index: 2 !important;
+}
+
+.a2 {
+  background-color: rgb(31, 29, 29) !important;
+  transform: translateX(100%); /* Mueve la derecha fuera de la pantalla */
+  transition: transform 0.5s ease-in-out;
+  z-index: 2 !important;
+
+}
+
+/* Cuando el checkbox está marcado */
+#check:checked ~ div .a {
+  transform: translateX(0); /* Desliza el div izquierdo hacia adentro */
+}
+
+#check:checked ~ div .a2 {
+  transform: translateX(0); /* Desliza el div derecho hacia adentro */
+}
+
+/* Estilo para las imágenes */
+.e1 {
+  transform: translateX(-20%);
+  left: -50% !important;
+}
+
+.e3 {
+  transform: translateX(20%);
+}
+
+.logoicono {
+  font-size: 4rem;
+}
+
+.logocaja {
+  width: 7rem;
+  padding: 0rem 2rem;
+}
+
+main {
+  background-image: url('assets/bg.jpeg');
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+}
+
+.letratitulo {
+  font-size: 3rem;
+}
+
+.caja2 {
+  background-color: rgb(38, 38, 38);
+  margin-top: -3rem;
+}
+
+.caja3 {
+  background-color: rgb(38, 38, 38);
+  margin-top: -19.3rem;
+}
+
+.cajaa {
+  background-color: rgb(38, 38, 38);
+
+}
+.btn:hover {
+  color: black !important;
+  background: #d3ab55;
+}
+
