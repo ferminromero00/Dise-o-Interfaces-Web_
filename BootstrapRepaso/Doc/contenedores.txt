@@ -1,4 +1,0 @@
-CONTENEDORES
-
-container → Ancho adaptable según el tamaño de la pantalla.
-.container-fluid → Ocupará el 100% del ancho de la pantalla en todos los tamaños.

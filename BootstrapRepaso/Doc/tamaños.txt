@@ -1,7 +1,0 @@
-TAMAÑOS
-
-small: sm 
-medium: md
-large: lg 
-extralarge: xl
-gigant: xxl
