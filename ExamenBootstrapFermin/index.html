@@ -17,32 +17,35 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="w-100 h-auto">
+<body class="w-100 h-auto" id="#Discover">
     <nav
-        class="navbar navbar-expand-lg bg-body-tertiary justify-content-evenly align-content-center color-nav text-white">
+        class="navbar navbar-expand-lg bg-body-tertiary justify-content-evenly align-content-center color-nav text-white p-2">
         <div>
-            <img src="images/logo.png" class="w-25" />
+            <img src="images/logo.png" class="w-25 hovericono" />
         </div>
         <div class="list-unstyled d-flex gap-5 align-content-center justify-content-center text-center text-white">
             <li>
-                <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-light">Home</a>
+                <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-light navhover">Home</a>
             </li>
             <li>
-                <a href="" class="link-offset-2 link-underline link-underline-opacity-0 link-light">Discover</a>
+                <a href="#Discover"
+                    class="link-offset-2 link-underline link-underline-opacity-0 link-light navhover">Discover</a>
             </li>
             <li>
-                <a href="" class="link-offset-2 link-underline link-underline-opacity-0 link-light">Summry</a>
+                <a href="" class="link-offset-2 link-underline link-underline-opacity-0 link-light navhover">Summary</a>
             </li>
             <li>
-                <a href="" class="link-offset-2 link-underline link-underline-opacity-0 link-light">Takeaways</a>
+                <a href=""
+                    class="link-offset-2 link-underline link-underline-opacity-0 link-light navhover">Takeaways</a>
             </li>
             <li>
-                <a href="" class="link-offset-2 link-underline link-underline-opacity-0 link-light">Subscribe</a>
+                <a href=""
+                    class="link-offset-2 link-underline link-underline-opacity-0 link-light navhover">Subscribe</a>
             </li>
         </div>
         <div class="gap-3">
-            <i class="bi bi-facebook fs-3 me-3 naranja-texto"></i>
-            <i class="bi bi-twitter fs-3 naranja-texto"></i>
+            <i class="bi bi-facebook fs-3 me-3 naranja-texto hovericono pointer-event"></i>
+            <i class="bi bi-twitter fs-3 naranja-texto hovericono pointer-event"></i>
         </div>
     </nav>
 
@@ -74,7 +77,7 @@
                             <div class="offcanvas-body list-unstyled">
                                 <div class=" color-nav text-white h-100 gap-5 pointer-event">
                                     <h1 class="p-4 naranja-fondo mb-3">Dashboard</h1>
-                                    <li class="mb-3 mt-2 border-bottom border-1 alturaDash ">
+                                    <li class="mb-3 mt-2 border-bottom border-1 alturaDash">
                                         <a href="#"
                                             class="link-offset-2 link-underline link-underline-opacity-0 link-light fs-5"><i
                                                 class="bi bi-house-door-fill me-2"></i> Inicio</a>
@@ -104,8 +107,8 @@
 
                             </div>
                         </div>
-                        <button type="button"
-                            class="btn tamañoBton border border-1 text-black fs-4 letra mt-3 rounded-5 p-2 text-white bg-transparent hoverbton">DISCOVER</button>
+                        <button type="button" id="Discover"
+                            class="btn tamañoBton border border-1 text-black fs-4 letra mt-3 rounded-5 p-2 text-white bg-transparent hoverbton2">DISCOVER</button>
                     </div>
                     <div class="mt-4">
                         <button type="button"
@@ -155,8 +158,8 @@
             <div
                 class="d-flex flex-wrap justify-content-center text-center mt-4 align-content-center p-5 border-bottom">
                 <div class=" w-50 ">
-                    <h2 class="fw-bolder">PROYECTOS</h2>
-                    <h1 class="fw-bolder p-2">Proyectos destacados</h1>
+                    <h5 class="fw-bolder fs-4">PROYECTOS</h5>
+                    <h2 class="fw-bolder p-2 fs-1">Proyectos destacados</h2>
                     <p class="fs-5 mt-2 p-2">
                         Estamos orgullosos de nuestros proyectos exitosos y del valor que aportan a nuestros clientes.
                         Con
@@ -170,18 +173,23 @@
                 <div class="card" style="width: 18rem;">
                     <img src="images/project-1.jpg" class="card-img-top border border-1 border-black " alt="...">
                     <div class="card-body bg-black text-white opacity-75 rounded-bottom">
-                        <a href="">
-                            <p class="card-text link-offset-2 link-underline link-underline-opacity-0 link-light"><span class="fw-bolder">Orkla Foods</span> - Lorem ipsum dolor sit
+                        <p class="card-text">
+                            <a href="exampleModal"
+                                class="link-offset-2 link-underline link-underline-opacity-0 link-light">
+                                <span class="fw-bolder">Orkla Foods</span> - Lorem ipsum dolor sit
                                 amet
-                                consectetur adipisicing elit. Iste, aliquam.</p>
-                        </a>
+                                consectetur adipisicing elit. Iste, aliquam.
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="images/project-2.jpg" class="card-img-top border border-1 border-black" alt="...">
                     <div class="card-body bg-black text-white opacity-75 rounded-bottom">
-                        <p class="card-text "><span class="fw-bolder">First Bank</span> - Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Iste, aliquam.</p>
+                        <a href="" class="link-offset-2 link-underline link-underline-opacity-0 link-light">
+                            <p class="card-text "><span class="fw-bolder">First Bank</span> - Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Iste, aliquam.</p>
+                        </a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -194,61 +202,29 @@
                 <div class="card" style="width: 18rem;">
                     <img src="images/project-4.jpg" class="card-img-top border border-1 border-black" alt="...">
                     <div class="card-body bg-black text-white opacity-75 rounded-bottom">
-                        <p class="card-text "><span class="fw-bolder">Fast Courier</span> - Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Iste, aliquam.</p>
+                        <a href="" class="link-offset-2 link-underline link-underline-opacity-0 link-light">
+                            <p class="card-text "><span class="fw-bolder">Fast Courier</span> - Lorem ipsum dolor sit
+                                amet
+                                consectetur adipisicing elit. Iste, aliquam.</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=""
-            data-bs-whatever="@mdo">Open modal for @mdo</button>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            data-bs-whatever="@fat">Open modal for @fat</button>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </main>
 
     <footer>
         <section class="footer color-nav d-flex flex-wrap justify-content-center align-content-center flex-column ">
             <div class="w-75 text-center justify-content-between d-flex">
-                <i class="bi bi-facebook fs-3 me-3 naranja-texto"></i>
-                <i class="bi bi-twitter fs-3 me-3 naranja-texto"></i>
-                <i class="bi bi-github fs-3 me-3 naranja-texto"></i>
-                <i class="bi bi-youtube fs-3 me-3 naranja-texto"></i>
-                <i class="bi bi-instagram fs-3 me-3 naranja-texto"></i>
-                <i class="bi bi-messenger fs-3 me-3 naranja-texto"></i>
-                <i class="bi bi-whatsapp fs-3 me-3 naranja-texto"></i>
+                <i class="bi bi-facebook fs-1 me-3 naranja-texto hovericono"></i>
+                <i class="bi bi-twitter fs-1 me-3 naranja-texto hovericono"></i>
+                <i class="bi bi-github fs-1 me-3 naranja-texto hovericono"></i>
+                <i class="bi bi-youtube fs-1 me-3 naranja-texto hovericono"></i>
+                <i class="bi bi-instagram fs-1 me-3 naranja-texto hovericono"></i>
+                <i class="bi bi-messenger fs-1 me-3 naranja-texto hovericono"></i>
+                <i class="bi bi-whatsapp fs-1 me-3 naranja-texto hovericono "></i>
             </div>
-            <div>
+            <div class="mt-3">
                 <p class="text-white text-center">&copy;2025 @Fermin Romer. Hecho con fines educativos</p>
             </div>
         </section>
