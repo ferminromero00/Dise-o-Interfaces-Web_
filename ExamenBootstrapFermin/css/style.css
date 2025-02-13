@@ -20,7 +20,12 @@ body {
 
 .contenedor {
   width: 100%;
-  height: 100vh;
+  height: 165vh;
+}
+
+.contenedor2 {
+  width: 100%;
+  height: 90vh;
 }
 
 .fondo-1 {
@@ -29,11 +34,11 @@ body {
 }
 
 .fotoheader {
-  height: 30vh;
+  height: 26vh;
 }
 
 .tamaño2header {
-  width: 38rem;
+  width: 35rem; 
 }
 
 .tamañoTitulo {
@@ -48,3 +53,20 @@ body {
   height: 48px;
 }
 
+.popover-style {
+  width: 3rem !important;
+  height: 1vh !important;
+}
+
+.hoverbton:hover {
+  opacity: 0.9;
+}
+
+.hover-popover:hover {
+ background-color: black !important;
+} 
+
+
+.footer {
+  height: 20vh;
+}
