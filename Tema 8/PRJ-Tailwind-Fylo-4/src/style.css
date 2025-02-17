@@ -1,4 +1,18 @@
 @import "tailwindcss";
 
+/*COLORES*/
+@theme {
+  --color-cyan: hsl(179, 68%, 64%);
+}
 
+/* CLASES DE UTILIDAD PERSONALIZADAS */
+@layer utilities {
+  .bg-logo-light-mode {
+    background-image: url("images/logo-light-mode.svg");
+  }
+
+  .bg-curvy-light-mode {
+    background-image: url("images/bg-curvy-light-mode.svg");
+  }
+}
 

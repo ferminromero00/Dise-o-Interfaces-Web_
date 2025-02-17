@@ -1,12 +1,158 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <title>Estilos fondo</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Proyecto Fylo</title>
+  </head>
+
+  <body>
+    <!--SECCION HEADER-->
+    <header class="container mx-auto mt-10 h-40 px-6 text-center md:h-20">
+      <!--LOGO-->
+      <div
+        class="bg-logo-light-mode top-10 left-10 mx-auto h-20 w-48 bg-no-repeat md:absolute md:mx-0"
+      ></div>
+      <!--MENU-->
+      <div
+        class="top-12 right-10 flex items-center justify-center space-x-4 md:absolute md:space-x-10"
+      >
+        <a href="#funcionalidades" class="hover:text-cyan">Funcionalidades</a>
+        <a href="#testimonios" class="hover:text-cyan">Testimonios</a>
+
+        <!--BTN CLARO/OSCURO-->
+        <button
+          class="rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 focus:outline-none"
+          id="theme-toggle"
+        >
+          <!--ICON DARK-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="hidden h-5 w-5"
+            viewBox="0 0 16 16"
+            id="moon-icon"
+          >
+            <path
+              d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+            />
+          </svg>
+
+          <!--ICON LIGHT-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="hidden h-5 w-5"
+            viewBox="0 0 16 16"
+            id="sun-icon"
+          >
+            <path
+              d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!--SECCION PRINCIPAL-->
+    <section class="bg-curvy-light-mode bg-contain bg-bottom bg-no-repeat">
+      <!--CONTENEDOR PRINCIPAL-->
+      <div class="container mx-auto px-6 pb-52 text-center md:pt-20">
+        <img src="images/illustration-intro.png" class="mx-auto" />
+        <h1
+          class="mx-auto mt-14 mb-10 max-w-2xl text-3xl leading-normal font-bold md:text-4xl"
+        >
+          Todos tus archivos en un lugar seguro, accesibles desde cualquier
+          lugar.
+        </h1>
+        <p class="mx-auto mb-10 max-w-sm text-sm md:max-w-lg md:text-lg">
+          Fylo almacena todos tus archivos mas importantes en un lugar seguro.
+          Accede a ellos desde donde lo necesites, comparte y colabora con
+          amigos , familiares y compañeros de trabajo
+        </p>
+        <button
+          class="w-52 transform rounded-full bg-cyan p-3 duration-200 hover:scale-90"
+        >
+          Comenzar
+        </button>
+      </div>
+    </section>
+
+    <!--SECCION FUNCIONALIDADES-->
+    <section class="bg-gray-50 pt-12">
+      <!--CONTENEDOR FUNCIONALIDADES-->
+      <div class="container mx-auto px-6 pb-32">
+        <!--PRIMERA ROW-->
+        <div
+          class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0 gap-5"
+        >
+          <!--ITEM 1-->
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="mb-6 flex h-24 items-center justify-center">
+              <img src="images/icon-access-anywhere.svg" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">
+              Accede a tu archivo desde cualquier lugar
+            </h3>
+            <p class="max-w-md">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              accusamus recusandae illum vitae possimus doloremque ipsum tenetur
+              et assumenda. Velit?
+            </p>
+          </div>
+          <!--ITEM 2-->
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="mb-6 flex h-24 items-center justify-center">
+              <img src="images/icon-security.svg" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">
+              Seguridad en la que puedes confiar
+            </h3>
+            <p class="max-w-md">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              accusamus recusandae illum vitae possimus doloremque ipsum tenetur
+              et assumenda. Velit?
+            </p>
+          </div>
+          <!--ITEM 3-->
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="mb-6 flex h-24 items-center justify-center">
+              <img src="images/icon-collaboration.svg" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">
+              Seguridad en la que puedes confiar
+            </h3>
+            <p class="max-w-md">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              accusamus recusandae illum vitae possimus doloremque ipsum tenetur
+              et assumenda. Velit?
+            </p>
+          </div>
+          <!--ITEM 4-->
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="mb-6 flex h-24 items-center justify-center">
+              <img src="images/icon-any-file.svg" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">
+              Seguridad en la que puedes confiar
+            </h3>
+            <p class="max-w-md">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              accusamus recusandae illum vitae possimus doloremque ipsum tenetur
+              et assumenda. Velit?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION PRODUCTIVIDAD-->
+    <section class="bg-white">
+      <!--CONTENEDOR PRODUCTIVIDAD-->
+      <div class="container ">
+
+      </div>
+    </section>
+  </body>
 </html>
