@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>PRJ-Tailwind-1</title>
+  </head>
+  <body>
+    <section
+      class="flex h-screen w-screen items-center justify-center bg-black/70"
+    >
+      <div class="flex rounded-2xl bg-black/30 md:h-80 md:w-2/3">
+        <div class="h-full w-60 p-3">
+          <img
+            src="images/img.jpg"
+            alt="edamame"
+            class="h-full transform rounded-l-xl transition-transform duration-200 hover:scale-105"
+          />
+        </div>
+
+        <div class="flex flex-col justify-center space-y-4">
+          <h3 class="text-2xl font-medium text-white">
+            Recibe consejos de dieta y ftness en tu bandeja de entrada
+          </h3>
+          <p class="text-white">
+            Come mejor y haz ejercicio mejor. Suscribete el boletin de
+            Diet&fitness
+          </p>
+          <form action="#">
+            <input
+              type="text"
+              name="email"
+              placeholder="Inserta tu email"
+              class="me-5 h-12 w-70 border-2 border-gray-400 p-4 text-gray-400"
+            />
+            <button class="h-12 rounded-lg bg-lime-500 px-6 hover:text-white">
+              Suscribete
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
