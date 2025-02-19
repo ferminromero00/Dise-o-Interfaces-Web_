@@ -3,7 +3,7 @@
 /*COLORES*/
 @theme {
   --color-cyan: hsl(179, 68%, 64%);
-  --color-dark-blue: black
+  --color-dark-blue: black;
 }
 
 /* CLASES DE UTILIDAD PERSONALIZADAS */
@@ -15,5 +15,8 @@
   .bg-curvy-light-mode {
     background-image: url("images/bg-curvy-light-mode.svg");
   }
-}
 
+  .ficon:hover {
+    filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg) ;
+  }
+}
