@@ -3,6 +3,7 @@
 /*COLORES*/
 @theme {
   --color-cyan: hsl(179, 68%, 64%);
+  --color-dark-blue: black
 }
 
 /* CLASES DE UTILIDAD PERSONALIZADAS */
