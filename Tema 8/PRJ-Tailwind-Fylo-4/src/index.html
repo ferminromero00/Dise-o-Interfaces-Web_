@@ -1,51 +1,51 @@
 <!doctype html>
-<html>
+<html lang="es" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="../js/script.js" defer></script>
     <title>Proyecto Fylo</title>
   </head>
 
-  <body>
-    <!--SECCION HEADER-->
+  <body class="dark:bg-dark-blue dark:text-white">
     <header class="container mx-auto mt-10 h-40 px-6 text-center md:h-20">
-      <!--LOGO-->
-      <div
-        class="bg-logo-light-mode top-10 left-10 mx-auto h-20 w-48 bg-no-repeat md:absolute md:mx-0"
-      ></div>
-      <!--MENU-->
+      <!-- Logo -->
+      <div class="bg-logo-light-mode dark:bg-logo-negro-mode top-10 left-10 mx-auto h-20 w-48 bg-no-repeat md:absolute md:mx-0 ">
+
+      </div>
+      <!-- Menu -->
       <div
         class="top-12 right-10 flex items-center justify-center space-x-4 md:absolute md:space-x-10"
       >
         <a href="#funcionalidades" class="hover:text-cyan">Funcionalidades</a>
         <a href="#testimonios" class="hover:text-cyan">Testimonios</a>
 
-        <!--BTN CLARO/OSCURO-->
+        <!-- Button Dark/Light -->
         <button
-          class="rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 focus:outline-none"
           id="theme-toggle"
+          class="rounded-lg p-2 text-sm text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 focus:outline-none"
         >
-          <!--ICON DARK-->
+          <!-- Icono Dark SVG -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
+            id="moon-icon"
             class="hidden h-5 w-5"
             viewBox="0 0 16 16"
-            id="moon-icon"
           >
             <path
               d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
             />
           </svg>
 
-          <!--ICON LIGHT-->
+          <!-- Icono Light SVG -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
+            id="sun-icon"
             class="hidden h-5 w-5"
             viewBox="0 0 16 16"
-            id="sun-icon"
           >
             <path
               d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
@@ -55,22 +55,27 @@
       </div>
     </header>
 
-    <!--SECCION PRINCIPAL-->
-    <section class="bg-curvy-light-mode bg-contain bg-bottom bg-no-repeat">
-      <!--CONTENEDOR PRINCIPAL-->
+    <!--Sección Principal -->
+    <section id="principal" class="bg-curvy-light-mode dark:bg-curvy-negro-mode bg-contain bg-bottom bg-no-repeat">
+      <!-- Contenedor Principal -->
       <div class="container mx-auto px-6 pb-52 text-center md:pt-20">
-        <img src="images/illustration-intro.png" class="mx-auto" />
+        <img
+          src="../assets/illustration-intro.png"
+          alt="intro"
+          class="mx-auto"
+        />
         <h1
           class="mx-auto mt-14 mb-10 max-w-2xl text-3xl leading-normal font-bold md:text-4xl"
         >
           Todos tus archivos en un lugar seguro, accesibles desde cualquier
           lugar.
         </h1>
-        <p class="mx-auto mb-10 max-w-sm text-sm md:max-w-lg md:text-lg">
-          Fylo almacena todos tus archivos mas importantes en un lugar seguro.
-          Accede a ellos desde donde lo necesites, comparte y colabora con
-          amigos , familiares y compañeros de trabajo
+        <p class="mx-auto mb-10 max-w-sm text-sm md:max-w-xl md:text-lg">
+          Fylo almacena todos tus archivos más importantes en un lugar seguro.
+          Accede a ellos donde los necesites, comparte y colabora con amigos,
+          familiares y compañeros de trabajo.
         </p>
+
         <button
           class="w-52 transform rounded-full bg-cyan p-3 duration-200 hover:scale-90"
         >
@@ -79,242 +84,219 @@
       </div>
     </section>
 
-    <!--SECCION FUNCIONALIDADES-->
-    <section class="bg-gray-50 pt-12">
-      <!--CONTENEDOR FUNCIONALIDADES-->
+    <!--Sección Funcionalidades -->
+    <section id="funcionalidades" class="bg-gray-50 dark:bg-dark-blue-2 pt-12">
+      <!-- Contenedor Funcionalidades -->
       <div class="container mx-auto px-6 pb-32">
-        <!--PRIMERA ROW-->
-        <div
-          class="flex flex-col gap-5 space-y-24 text-center md:flex-row md:space-y-0"
-        >
-          <!--ITEM 1-->
+        <!-- Primera Row -->
+        <div class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0">
+
+          <!-- Item 1 -->
           <div class="flex flex-col items-center space-y-2 md:w-1/2">
             <div class="mb-6 flex h-24 items-center justify-center">
-              <img src="images/icon-access-anywhere.svg" alt="" />
+              <img src="../assets/icon-access-anywhere.svg" alt="acceso" />
             </div>
-            <h3 class="text-xl font-bold">
-              Accede a tu archivo desde cualquier lugar
-            </h3>
+            <h3 class="text-xl font-bold">Accede a tu archivo desde cualquier lugar</h3>
             <p class="max-w-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              accusamus recusandae illum vitae possimus doloremque ipsum tenetur
-              et assumenda. Velit?
+              La capacidad de utilizar un smartphone, una tableta o un ordenador para acceder a tu cuenta significa que tus archivos te acompañan a todas partes.
             </p>
           </div>
-          <!--ITEM 2-->
+
+          <!-- Item 2 -->
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="../assets/icon-security.svg" alt="seguridad" />
+            </div>
+            <h3 class="text-xl font-bold">Seguridad en la que puedes confiar</h3>
+            <p class="max-w-md">
+              La autenticación de dos factores y el cifrado controlado por el usuario son solo algunas de las funciones de seguridad que ofrecemos para ayudar a proteger tus archivos.
+            </p>
+          </div>
+
+
+
+        </div>
+
+        <!-- Second Row -->
+        <div class="flex flex-col space-y-24 mt-28 text-center md:flex-row md:space-y-0">
+          <!-- Item 3 -->
           <div class="flex flex-col items-center space-y-2 md:w-1/2">
             <div class="mb-6 flex h-24 items-center justify-center">
-              <img src="images/icon-security.svg" alt="" />
+              <img src="../assets/icon-collaboration.svg" alt="colaboración" />
             </div>
-            <h3 class="text-xl font-bold">
-              Seguridad en la que puedes confiar
-            </h3>
+            <h3 class="text-xl font-bold">Accede a tu archivo desde cualquier lugar</h3>
             <p class="max-w-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              accusamus recusandae illum vitae possimus doloremque ipsum tenetur
-              et assumenda. Velit?
+              La capacidad de utilizar un smartphone, una tableta o un ordenador para acceder a tu cuenta significa que tus archivos te acompañan a todas partes.
             </p>
           </div>
-          <!--ITEM 3-->
+
+          <!-- Item 4 -->
           <div class="flex flex-col items-center space-y-2 md:w-1/2">
-            <div class="mb-6 flex h-24 items-center justify-center">
-              <img src="images/icon-collaboration.svg" alt="" />
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="../assets/icon-any-file.svg" alt="ficheros" />
             </div>
-            <h3 class="text-xl font-bold">
-              Seguridad en la que puedes confiar
-            </h3>
+            <h3 class="text-xl font-bold">Seguridad en la que puedes confiar</h3>
             <p class="max-w-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              accusamus recusandae illum vitae possimus doloremque ipsum tenetur
-              et assumenda. Velit?
+              La autenticación de dos factores y el cifrado controlado por el usuario son solo algunas de las funciones de seguridad que ofrecemos para ayudar a proteger tus archivos.
             </p>
           </div>
-          <!--ITEM 4-->
-          <div class="flex flex-col items-center space-y-2 md:w-1/2">
-            <div class="mb-6 flex h-24 items-center justify-center">
-              <img src="images/icon-any-file.svg" alt="" />
-            </div>
-            <h3 class="text-xl font-bold">
-              Seguridad en la que puedes confiar
-            </h3>
-            <p class="max-w-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              accusamus recusandae illum vitae possimus doloremque ipsum tenetur
-              et assumenda. Velit?
-            </p>
-          </div>
+        </div>
+
         </div>
       </div>
     </section>
 
-    <!--SECCION PRODUCTIVIDAD-->
-    <section class="bg-white">
-      <!--CONTENEDOR PRODUCTIVIDAD-->
-      <div
-        class="container mx-auto flex flex-col items-center px-6 pt-24 pb-32 md:flex-row"
-      >
-        <!--IMAGEN-->
+    <!-- Sección Productiva -->
+    <section id="productive" class="bg-white dark:bg-dark-blue">
+      <!-- Contenedor Productivo -->
+      <div class="container flex flex-col items-center mx-auto px-6 pt-24 pb-32 md:flex-row md:space-x-16">
+        <!-- Imagen -->
         <div class="md:w-1/2">
-          <img
-            src="images/illustration-stay-productive.png"
-            alt=""
-            class="mb-10"
-          />
+          <img src="../assets/illustration-stay-productive.png" alt="" class="mb-10"/>
         </div>
-        <!--CONTENIDO DE LA DERECHA-->
+
+        <!-- Contenido de la derecha -->
         <div class="flex flex-col items-start md:w-1/2">
           <div class="flex flex-col space-y-5">
             <h4 class="max-w-md text-xl font-bold md:text-4xl">
-              Mantente productivo, este donde estes
+              Mantente productivo, estés donde estés
             </h4>
             <p class="text-md md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor
-              tempore corporis maxime amet molestias laborum? Eaque debitis
-              corporis nam!
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
             </p>
-            <p class="text-md md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor
-              tempore corporis maxime amet molestias laborum? Eaque debitis
-              corporis nam!
+
+            <p class="text-md md:text-lg dark:text-black"> 
+              Nunca permitas que la ubicación sea un problema al acceder a tus archivos. Fylo te cubre en todas tus necesidades de almacenamiento 
+              de archivos.
             </p>
           </div>
-          <!--LINK-->
-          <div class="mt-4 block">
+
+          <!-- Link -->
+          <div class="block mt-4">
             <a href="#" class="border-b border-cyan text-cyan">
-              Descubre como funciona Fylo
-              <img src="images/icon-arrow.svg" alt="" class="inline pb-2" />
+              Descubre cómo funciona Fylo <img src="../assets/icon-arrow.svg" alt="" class="inline pb-2" />
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!--SECCION TESTIMONIOS-->
-    <section class="bg-gray-500">
+    <!-- Sección Testimonios -->
+    <section id="testimonials" class="bg-gray-50 dark:bg-dark-blue">
+      <!-- Contenedor Testimonios -->
       <div class="container mx-auto px-6 pt-12 pb-80 md:pb-96">
-        <div
-          class="relative flex w-full space-y-6 md:flex-row md:space-y-0 md:space-x-12"
-        >
-          <!--IMAGEN ESQUINA-->
-          <img
-            src="./images/bg-quotes.png"
-            class="absolute -top-2 left-1 w-10 md:-top-16 md:w-20"
-          />
-          <!--CAJA 1-->
-          <div
-            class="flex flex-col space-y-6 rounded-lg bg-gray-100 p-10 md:w-1/3"
-          >
+
+        <!-- Contenedor de las cajas -->
+        <div class="relative flex flex-col w-full space-y-6 md:flex-row md:space-y-0 md:space-x-12">
+          <!-- Imagen esquina -->
+          <img src="../assets/bg-quotes.png" alt="" class="absolute left-1 top-0 w-10 md:-top-16 md:w-20"/>
+
+          <!-- Caja 1 -->
+          <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/3 dark:bg-dark-blue-3">
             <p class="text-sm leading-5 md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              recusandae natus nesciunt enim optio asperiores blanditiis, beatae
-              ab cupiditate iure, modi quia a aut quidem ipsum velit facilis
-              nulla. Iste!
+              Fylo ha mejorado la productividad de nuestro equipo en un orden de magnitud. Desde que hicimos el cambio, nuestro equipo se ha convertido en una máquina de colaboración bien engrasada.
             </p>
-            <!--IMAGEN CARD-->
+            <!-- Customer Info -->
             <div class="flex space-x-4">
-              <img src="./images/profile-1.jpg" class="h-10 rounded-full" />
+              <img src="../assets/profile-1.jpg" alt="" class="w-10 h-10 rounded-full"/>
               <div>
                 <h5 class="text-sm font-semibold">Satish Patel</h5>
-                <p class="text-xs font-extralight">Founder & CEO</p>
+                <p class="text-xs font-extralight">Founder & CEO. Huddle</p>
               </div>
             </div>
           </div>
-          <!--CAJA 2-->
-          <div
-            class="flex flex-col space-y-6 rounded-lg bg-gray-100 p-10 md:w-1/3"
-          >
+
+        <!-- Caja 2 -->
+          <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/3 dark:bg-dark-blue-3">
             <p class="text-sm leading-5 md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              recusandae natus nesciunt enim optio asperiores blanditiis, beatae
-              ab cupiditate iure, modi quia a aut quidem ipsum velit facilis
-              nulla. Iste!
+              Fylo ha mejorado la productividad de nuestro equipo en un orden de magnitud. Desde que hicimos el cambio, nuestro equipo se ha convertido en una máquina de colaboración bien engrasada.
             </p>
-            <!--IMAGEN CARD-->
+            <!-- Customer Info -->
             <div class="flex space-x-4">
-              <img src="./images/profile-1.jpg" class="h-10 rounded-full" />
+              <img src="../assets/profile-2.jpg" alt="" class="w-10 h-10 rounded-full"/>
               <div>
-                <h5 class="text-sm font-semibold">Satish Patel</h5>
-                <p class="text-xs font-extralight">Founder & CEO</p>
+                <h5 class="text-sm font-semibold">Bruce McKenzie</h5>
+                <p class="text-xs font-extralight">Founder & CEO. Huddle 2</p>
               </div>
             </div>
           </div>
-          <!--CAJA 3-->
-          <div
-            class="flex flex-col space-y-6 rounded-lg bg-gray-100 p-10 md:w-1/3"
-          >
+        
+        <!-- Caja 3 -->
+          <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/3 dark:bg-dark-blue-3">
             <p class="text-sm leading-5 md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              recusandae natus nesciunt enim optio asperiores blanditiis, beatae
-              ab cupiditate iure, modi quia a aut quidem ipsum velit facilis
-              nulla. Iste!
+              Fylo ha mejorado la productividad de nuestro equipo en un orden de magnitud. Desde que hicimos el cambio, nuestro equipo se ha convertido en una máquina de colaboración bien engrasada.
             </p>
-            <!--IMAGEN CARD-->
+            <!-- Customer Info -->
             <div class="flex space-x-4">
-              <img src="./images/profile-1.jpg" class="h-10 rounded-full" />
+              <img src="../assets/profile-3.jpg" alt="" class="w-10 h-10 rounded-full"/>
               <div>
-                <h5 class="text-sm font-semibold">Satish Patel</h5>
-                <p class="text-xs font-extralight">Founder & CEO</p>
+                <h5 class="text-sm font-semibold">Eva Boyd</h5>
+                <p class="text-xs font-extralight">Founder & CEO. Huddle 3</p>
               </div>
             </div>
           </div>
         </div>
+
+
+
+        
       </div>
+
     </section>
 
-    <!--SECCION FORMULARIO-->
-    <section class="px-6 md:px-0">
-      <div
-        class="relative -top-40 mx-auto max-w-4xl space-y-6 rounded-lg bg-gray-200 p-10 px-6 text-center md:px-16"
-      >
-        <h5 class="text-2xl font-bold">Obten acceso anticipado hoy</h5>
+    <!-- Sección Formulario -->
+    <section id="formulario" class="relative px-6 dark:bg-dark-blue-2 md:px-0">
+      <div class="relative -top-40 max-w-4xl mx-auto p-10 px-6 space-y-6 text-center rounded-lg bg-gray-200 dark:bg-dark-blue-1 md:px-16">
+        <h5 class="text-2xl font-bold">Obtén acceso anticipado hoy</h5>
         <p class="text-sm">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
-          aliquam exercitationem molestias dolor repellat. Delectus facilis
-          omnis velit nihil est!
+          Registrarse toma solo un minuto y nuestro nivel inicial gratuito es extremadamente generoso. Si tienes alguna pregunta, nuestro equipo de soporte estará encantado de ayudarte
         </p>
-        <!--CONTENEDOR INPUT & BUTTON-->
-        <div
-          class="flex flex-col items-start space-y-6 space-x-6 md:flex-row md:space-y-0"
-        >
-          <!--CONTENEDOR DEL INPUT-->
-          <div class="w-full">
-            <input
-              type="text"
-              class="w-full rounded-full bg-white px-10 py-3 focus:outline-0"
-              placeholder="email@ejemplo.com"
-            />
+        
+        <!-- Contenedor del Input & Button -->
+        <div class="flex flex-col items-start space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+          <div class="w-full">  <!--Contenedor del input-->
+            <input type="text" class="bg-white dark:placeholder-amber-800 dark:text-red-950 w-full px-10 py-3 rounded-full focus:outline-none"
+              placeholder="email@example.com"/>
           </div>
-          <button
-            class="w-full transform rounded-full bg-cyan p-3 px-6 duration-200 hover:scale-90 md:w-60"
-          >
+
+          <button class="w-full p-3 px-6 rounded-full bg-cyan md:w-56 transform hover:scale-90 duration-200">
             Empieza gratis
           </button>
         </div>
+
       </div>
+      
+
     </section>
 
-    <footer class="bg-dark-blue text-white">
-      <div class="container mx-auto px-5 pt-12 pb-10">
-        <div
-          class="flex flex-col justify-between space-y-24 md:flex-row md:space-y-0"
-        >
-          <div class="space-y-6">
-            <div class="flex items-center space-x-3">
+        <!-- Footer -->
+    <footer class="bg-dark-blue-1 text-white"> <!--Contenedor principal del footer-->
+      <!-- Contenedor para centrar el footer -->
+      <div class="container mx-auto pt-12 px-5 pb-10">
+        <!-- Este contenedor organiza el footer -->
+        <div class="flex flex-col justify-between space-y-24 md:flex-row md:space-y-0">
+          <!-- Email & Phone - Agrupa la información de contacto-->
+          <div class="mt-10 space-y-6">
+            <!-- Organiza el icono del teléfono y el número de telefono -->
+            <div class="flex items-center space-x-3 md:-mt-10">
+              <!-- div que le da ancho del contenedor del icono del teléfono -->
               <div class="w-6">
-                <img src="./images/icon-phone.svg" alt="" class="scale-90" />
+                <img src="../assets/icon-phone.svg" alt="telefono"/>
               </div>
               <div>+1-543-123-4567</div>
             </div>
+            <!-- Hacemos lo mismo con el otro icono y el email -->
             <div class="flex items-center space-x-3">
               <div class="w-6">
-                <img src="./images/icon-email.svg" alt="" class="scale-90" />
+                <img src="../assets/icon-email.svg" alt="email"/>
               </div>
               <div>example@fylo.com</div>
             </div>
           </div>
-          <div
-            class="flex flex-col space-y-10 text-xl md:flex-row md:space-y-0 md:space-x-20 md:text-base"
-          >
+
+          <!-- Organiza el menu -->
+          <div class="flex flex-col space-y-10 text-xl md:text-base md:space-x-20 md:space-y-0 md:flex-row">
             <div class="flex flex-col space-y-3">
               <a href="#">About</a>
               <a href="#">Jobs</a>
@@ -322,31 +304,32 @@
               <a href="#">Blog</a>
             </div>
             <div class="flex flex-col space-y-3">
-              <a href="#">Contact Us</a><a href="#">Terms</a
-              ><a href="#">Privacy</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Terms</a>
+              <a href="#">Privacy</a>
             </div>
           </div>
-          <div class="flex justify-center space-x-3 pb-10">
+
+          <!-- Social -->
+          <div class="flex justify-center pb-10 space-x-3">
             <div>
-              <a href="#"
-                ><img src="./images/facebook.svg" alt="" class="ficon rounded-full bg-dark-blue p-2"
-              /></a>
+              <a href="#"> <img src="../assets/facebook.svg" alt="" class="p-2 bg-dark-blue rounded-full ficon"/>
+              </a>
             </div>
             <div>
-              <a href="#"
-                ><img src="./images/twitter.svg" alt="" class="ficon rounded-full bg-dark-blue p-2"
-              /></a>
+              <a href="#"> <img src="../assets/twitter.svg" alt="" class="p-2 bg-dark-blue rounded-full ficon"/>
+              </a>
             </div>
             <div>
-              <a href="#"
-                ><img src="./images/instagram.svg" alt="" class="ficon rounded-full bg-dark-blue p-2"
-              /></a>
+              <a href="#"> <img src="../assets/instagram.svg" alt="" class="p-2 bg-dark-blue rounded-full ficon"/>
+              </a>
             </div>
           </div>
         </div>
+
       </div>
     </footer>
 
-    <script src="../js/script.js"></script>
+
   </body>
 </html>
