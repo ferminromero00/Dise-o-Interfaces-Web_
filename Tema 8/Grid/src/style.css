@@ -1,4 +1,7 @@
 @import "tailwindcss";
 
-
-
+@layer components {
+  .card {
+    @apply grid place-content-center rounded-lg border-2 border-red-600 bg-red-500 font-bold text-white;
+  }
+}
