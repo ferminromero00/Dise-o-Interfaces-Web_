@@ -18,19 +18,52 @@
               Log in to your to upload or download pictures, videos or music
             </p>
             <input
-              class="mt-10 w-110 border border-gray-400 p-6 rounded-2xl"
+              class="mt-10 w-110 rounded-2xl border border-gray-400 p-6"
               type="text"
               placeholder="Enter your email address"
             />
-            <div class="w-full h-30 mt-10">
-              <a href="flex">Forgot password</a>
-              <div>
+            <div
+              class="mt-5 flex h-40 w-full items-center justify-between border-b border-b-gray-500 text-center"
+            >
+              <a class="text-blue-400 cursor-pointer">Forgot password</a>
+              <p
+                class="flex w-40 cursor-pointer items-center justify-evenly rounded-2xl border bg-blue-500 p-7 text-center text-lg font-bold text-white"
+              >
                 Next
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </p>
+            </div>
+            <p class="mt-6 text-center text-lg text-gray-400">or log in with</p>
+            <div class="mt-10 flex justify-evenly">
+              <div
+                class="flex w-45 transform items-center justify-evenly rounded-sm border border-gray-400 p-3 text-center duration-200 hover:-translate-y-1 hover:shadow-2xl"
+              >
+                <img src="../assets/facebook.png" class="h-10" /><span
+                  >Facebook</span
+                >
+              </div>
+              <div
+                class="flex w-45 transform items-center justify-evenly rounded-sm border border-gray-400 p-3 text-center duration-200 hover:-translate-y-1 hover:shadow-2xl"
+              >
+                <img src="../assets/google.png" class="h-10" /><span
+                  >Google</span
+                >
               </div>
             </div>
-            
           </div>
-          <div class="h-full w-1/2 box-border">
+          <div class="box-border h-full w-1/2">
             <img
               src="../assets/image.jpg"
               class="h-full w-full rounded-r-3xl object-cover"
