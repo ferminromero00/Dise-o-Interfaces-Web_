@@ -17,32 +17,28 @@
   /* Familias tipográficas personalizadas */
   --font-sans: "Raleway", sans-serif;
   --font-opensans: "Open Sans", sans-serif;
-
-
 }
 
 /* Ejemplo de clases de utilidad personalizadas */
 @layer utilities {
-
   .bg-logo-light-mode {
-      background-image: url('../assets/logo-light-mode.svg');
-    }
-  
-    .bg-logo-negro-mode {
-      background-image: url('../assets/logo-dark-mode.svg');
-    }
+    background-image: url("../assets/logo-light-mode.svg");
+  }
+
+  .bg-logo-negro-mode {
+    background-image: url("../assets/logo-dark-mode.svg");
+  }
 
   .bg-curvy-negro-mode {
-      background-image: url('../assets/bg-curvy-dark-mode.svg');
-    }
-
+    background-image: url("../assets/bg-curvy-dark-mode.svg");
+  }
 
   .ficon:hover {
-        filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg) brightness(105%) contrast(104%);
+    filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg)
+      brightness(105%) contrast(104%);
   }
 
   .bg-curvy-light-mode {
-    background-image: url('../assets/bg-curvy-light-mode.svg');
+    background-image: url("../assets/bg-curvy-light-mode.svg");
   }
-
 }
