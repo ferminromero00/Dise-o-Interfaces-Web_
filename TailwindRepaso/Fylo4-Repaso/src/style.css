@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@utiliti@theme {
+@theme {
     /* Colores personalizados */
     --color-cyan: hsl(176, 68%, 64%);
     --color-dark-blue: hsl(217, 28%, 15%);
