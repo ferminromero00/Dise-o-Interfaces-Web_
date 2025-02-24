@@ -105,7 +105,7 @@
           class="flex flex-col items-center justify-center gap-10 md:flex-row xl:flex-row"
         >
           <div
-            class="flex w-80 flex-col items-center justify-center gap-10 rounded-2xl shadow-2xl"
+            class="container flex w-80 flex-col items-center justify-center gap-10 rounded-2xl shadow-2xl"
           >
             <div
               class="m-10 flex flex-col items-center justify-between gap-5 text-center"
@@ -222,7 +222,10 @@
             d="M678 256.3L981.8 59.1c58.4-37.9 136.5-21.3 174.5 37.1l.1.2c37.9 58.4 21.3 136.5-37.1 174.5L815.5 468.1C757.1 506 679 489.4 641.1 431l-.1-.2c-38-58.4-21.4-136.5 37-174.5z"
           ></path>
         </svg>
-        <img src="../assets/image_info1.png" class="absolute top-50 xl:left-34 md:left-20 md:w-150 xl:w-auto w-90 left-3" />
+        <img
+          src="../assets/image_info1.png"
+          class="absolute top-50 left-3 w-90 md:left-20 md:w-150 xl:left-34 xl:w-auto"
+        />
         <div
           class="flex translate-y-17 flex-col items-center justify-center gap-1 rounded-lg bg-darkViolet"
         >
@@ -230,14 +233,14 @@
             <input
               type="email"
               placeholder="Insert your email"
-              class="peer h-15 w-200 rounded-lg border bg-white p-3 placeholder:text-yellow-400"
+              class="peer h-15 w-100 rounded-lg border bg-white p-3 placeholder:text-yellow-400 xl:w-200"
             />
             <div
               class="cursor-pointer rounded-lg bg-cyan p-2 text-white hover:opacity-85"
             >
               Shorten it!
             </div>
-            <p class="absolute top-16 hidden text-red-500 peer-invalid:block">
+            <p class="absolute top-25 hidden text-red-500 peer-invalid:block">
               Email incorrect
             </p>
           </div>
@@ -247,9 +250,14 @@
 
     <section class="w-full bg-gray-200">
       <div class="container mx-auto">
-        <div class="flex flex-col xl:flex-row items-center justify-center gap-20 p-30 text-center">
-          <div class="flex flex-col gap-5 w-80 xl:w-auto md:w-auto ">
-            <img src="../assets/image_info2.png" class="h-60 xl:h-120 md:h-120" />
+        <div
+          class="flex flex-col items-center justify-center gap-20 p-30 text-center md:flex-row xl:flex-row"
+        >
+          <div class="flex w-80 flex-col gap-5 md:w-100 xl:w-auto">
+            <img
+              src="../assets/image_info2.png"
+              class="h-70 md:h-50 xl:h-120"
+            />
             <h1 class="text-4xl">Article 1</h1>
             <p class="text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
@@ -258,8 +266,11 @@
               cupiditate ipsam repudiandae reiciendis perferendis.
             </p>
           </div>
-          <div class="flex flex-col gap-5 w-80 xl:w-auto md:w-auto">
-            <img src="../assets/image_info3.png" class="h-60 xl:h-120 md:h-120" />
+          <div class="flex w-80 flex-col gap-5 md:w-100 xl:w-auto">
+            <img
+              src="../assets/image_info3.png"
+              class="h-70 md:h-50 xl:h-120"
+            />
             <h1 class="text-4xl">Article 2</h1>
             <p class="text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
@@ -272,14 +283,20 @@
       </div>
     </section>
 
-    <footer class="h-screen w-full bg-gradient-to-r from-blue-700 to-rose-800">
-      <div class="flex flex-col xl:flex-row items-center justify-center gap-20 p-30">
+    <footer class="h-200 w-full bg-gradient-to-r from-blue-700 to-rose-800">
+      <div
+        class="flex flex-col items-center justify-center gap-20 p-30 md:flex-row xl:flex-row"
+      >
         <div>
-          <img src="../assets/firefox.png" class="hidden xl:block" />
+          <img src="../assets/firefox.png" class="hidden md:block xl:block" />
         </div>
-        <div class="flex flex-col gap-10 xl:text-left text-center"> 
-          <h1 class="text-6xl text-white">Disponible para moviles</h1>
-          <div class="flex gap-5 justify-center xl:justify-start flex-col xl:flex-row md:flex-row items-center  ">
+        <div class="flex flex-col gap-10 text-center md:text-left xl:text-left">
+          <h1 class="text-5xl text-white md:text-5xl xl:text-6xl">
+            Disponible para moviles
+          </h1>
+          <div
+            class="md:flex-cl flex flex-col items-center justify-center gap-5 xl:flex-row xl:justify-start"
+          >
             <div
               class="flex w-50 cursor-pointer flex-row items-center rounded-lg border border-none bg-black text-white hover:border hover:bg-white hover:text-black"
             >
@@ -310,7 +327,7 @@
           </div>
         </div>
       </div>
-      <div class=" flex justify-center gap-10">
+      <div class="flex justify-center gap-10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
