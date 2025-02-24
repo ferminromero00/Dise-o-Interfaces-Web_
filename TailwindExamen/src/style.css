@@ -1,4 +1,10 @@
 @import "tailwindcss";
 
+@theme {
 
+}
+
+@layer utilities {
+    
+}
 
