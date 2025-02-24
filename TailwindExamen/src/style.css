@@ -6,7 +6,15 @@ body {
 }
 
 @theme {
+  --color-softBlue: hsl(231, 69%, 60%);
+  --color-grayishBlue: hsl(229, 8%, 60%);
+  --color-darkViolet: hsl(257, 27%, 26%);
+  --color-cyan: hsl(180, 66%, 60%);
+  --color-cyanLight: hsl(180, 66%, 60%);
 }
 
 @layer utilities {
+  .bg-dots.svg {
+    background-image: url("../assets/bg-dots.svg");
+  }
 }
