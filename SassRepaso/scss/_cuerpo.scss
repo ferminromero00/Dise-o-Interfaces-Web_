@@ -42,12 +42,29 @@
   font-size: 1.5rem;
   margin-top: 1rem;
   transition: all 0.5s ease;
-  background-color: white; 
-  border-radius: 5rem; 
+  background-color: white;
+  border-radius: 5rem;
 
   &:hover {
     background-color: $color-primary;
     color: $color-black;
     cursor: pointer;
+  }
+
+  @media (max-width: 769px) {
+    padding: 1rem;
+  }
+  @media (max-width: 391px) {
+    padding: 0.5rem;; 
+  }
+}
+
+.icono {
+  font-size: 4rem;
+  color: $color-primary;
+  transition: all 0.5s ease;
+
+  &:hover {
+    color: $color-secondary;
   }
 }
