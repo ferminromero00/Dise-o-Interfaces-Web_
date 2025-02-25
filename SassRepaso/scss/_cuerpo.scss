@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icon {
+  font-size: 5rem;
+  color: $color-primary;
+}
+
+.boton {
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-black;
+    cursor: pointer;
+  }
+}
+
+.star {
+  color: $color-primary;
+}
+
+.imagen {
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(0.8);
+  }
+}
+
+.boton2 {
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  transition: all 0.5s ease;
+  background-color: white; 
+  border-radius: 5rem; 
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-black;
+    cursor: pointer;
+  }
+}

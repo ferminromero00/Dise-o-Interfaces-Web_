@@ -9,21 +9,18 @@ $font-josefinSans: "Josefin Sans", sans-serif;
 $font-nunito: "Nunito", sans-serif;
 
 @mixin flexLayout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@mixin textStyle ($transform: uppecase) {
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: $transform;
+@mixin textStyle($transform: uppecase) {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: $transform;
 }
 
-
-@mixin centering($topValue) {
-    position: absolute;
-    top: $topValue;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@mixin centrarAbsolute {
+  position: absolute;
+  top: 0;
 }
