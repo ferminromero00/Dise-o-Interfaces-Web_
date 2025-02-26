@@ -1,3 +1,116 @@
+/*EJERCICIO 1*/
+.g--shadow-0 {
+  box-shadow: 0 0px 0px hsl(0, 0%, 0%);
+}
 
+.g--shadow-1 {
+  box-shadow: 0 1px 3px hsl(0, 0%, 0.2%);
+}
+
+.g--shadow-2 {
+  box-shadow: 0 4px 6px hsl(0, 0%, 0.2%);
+}
+
+.g--shadow-3 {
+  box-shadow: 0 5px 15px hsl(0, 0%, 0.2%);
+}
+
+.g--shadow-4 {
+  box-shadow: 0 10px 24px hsl(0, 0%, 0.2%);
+}
+
+.g--shadow-5 {
+  box-shadow: 0 15px 35px hsl(0, 0%, 0.2%);
+}
+
+/*EJERCICIO 2*/
+.text-primary {
+  color: #3498db;
+}
+
+.text-secondary {
+  color: #2ecc71;
+}
+
+.text-danger {
+  color: #e74c3c;
+}
+
+.text-warning {
+  color: #f39c12;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.text-medium {
+  font-size: 16px;
+}
+
+.text-large {
+  font-size: 24px;
+}
+
+.text-xlarge {
+  font-size: 32px;
+}
+
+.m-xs {
+  margin: 4px;
+}
+
+.m-sm {
+  margin: 8px;
+}
+
+.m-md {
+  margin: 16px;
+}
+
+.m-lg {
+  margin: 24px;
+}
+
+.m-xl {
+  margin: 32px;
+}
+
+.p-xs {
+  padding: 4px;
+}
+
+.p-sm {
+  padding: 8px;
+}
+
+.p-md {
+  padding: 16px;
+}
+
+.p-lg {
+  padding: 24px;
+}
+
+.p-xl {
+  padding: 32px;
+}
+
+.cajas {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.caja {
+  border: 1px solid black;
+  width: 10%;
+  height: 20vh;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+.cajas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}  
+
+.titulo {
+    text-align: center;
+}
+
+.caja {
+    border: 1px solid black;
+    width: 10%;
+    height: 20vh;  
+}

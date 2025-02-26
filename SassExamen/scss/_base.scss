@@ -1,0 +1,80 @@
+/*EJERCICIO 1*/
+
+$sombras: (
+    0: 0 0px 0px hsla(0, 0%, 0),
+    1: 0 1px 3px hsla(0, 0%, 0.2),
+    2: 0 4px 6px hsla(0, 0%, 0.2),
+    3: 0 5px 15px hsla(0, 0%, 0.2),
+    4: 0 10px 24px hsla(0, 0%, 0.2),
+    5: 0 15px 35px hsla(0, 0%, 0.2),
+);
+
+@for $i from 0 through 5 { 
+  .g--shadow-#{$i} {
+    box-shadow: map-get($map: $sombras, $key: $i);
+  }
+}
+
+@mixin box-shadow {
+  --webkit-box-shadow: box-shadow:$sombras ;
+  --moz-box-shadow: box-shadow:$sombras ;
+  box-shadow: none;
+}
+
+/*EJERCICIO 2*/
+
+$theme: (
+  "colors": (
+    "primary": #3498db,
+    "secondary": #2ecc71,
+    "danger": #e74c3c,
+    "warning": #f39c12
+  ),
+  "sizes": (
+    "small": 12px,
+    "medium": 16px,
+    "large": 24px,
+    "xlarge": 32px
+  ),
+  "spacing": (
+    "xs": 4px,
+    "sm": 8px,
+    "md": 16px,
+    "lg": 24px,
+    "xl": 32px
+  )
+);
+
+@mixin theme-color($color){
+    background-color: map-get($theme, "colors", $color);
+}
+
+@mixin theme-size($tamano){
+    font-size: map-get($theme, "sizes", $tamano);
+}
+
+@each $color, $colors in map-get($theme, "colors") {
+    .text-#{$color} {
+        color: $colors;
+    }
+}
+
+@each $tamanos, $tamano in map-get($theme, "sizes") {
+    .text-#{$tamanos} {
+        font-size: $tamano;
+    }
+}
+
+@each $espacios, $margin in map-get($theme, "spacing") {
+    .m-#{$espacios} {
+        margin: $margin;
+    }
+}
+
+@each $espacios, $padding in map-get($theme, "spacing") {
+    .p-#{$espacios} {
+        padding: $padding;
+    }
+}
+
+
