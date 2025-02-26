@@ -1,8 +1,4 @@
 /*EJERCICIO 1*/
-.g--shadow-0 {
-  box-shadow: 0 0px 0px hsl(0, 0%, 0%);
-}
-
 .g--shadow-1 {
   box-shadow: 0 1px 3px hsl(0, 0%, 0.2%);
 }
@@ -21,6 +17,10 @@
 
 .g--shadow-5 {
   box-shadow: 0 15px 35px hsl(0, 0%, 0.2%);
+}
+
+.g--shadow-none {
+  box-shadow: 0 0px 0px hsl(0, 0%, 0%);
 }
 
 /*EJERCICIO 2*/

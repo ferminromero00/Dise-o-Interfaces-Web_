@@ -1,7 +1,7 @@
 /*EJERCICIO 1*/
 
 $sombras: (
-    0: 0 0px 0px hsla(0, 0%, 0),
+    none: 0 0px 0px hsla(0, 0%, 0),
     1: 0 1px 3px hsla(0, 0%, 0.2),
     2: 0 4px 6px hsla(0, 0%, 0.2),
     3: 0 5px 15px hsla(0, 0%, 0.2),
@@ -9,11 +9,18 @@ $sombras: (
     5: 0 15px 35px hsla(0, 0%, 0.2),
 );
 
-@for $i from 0 through 5 { 
+@for $i from 1 through 5 { 
   .g--shadow-#{$i} {
     box-shadow: map-get($map: $sombras, $key: $i);
   }
 }
+
+
+@for $i from 1 through 1 { 
+    .g--shadow-none {
+      box-shadow: map-get($map: $sombras, $key: "none");
+    }
+  }
 
 @mixin box-shadow {
   --webkit-box-shadow: box-shadow:$sombras ;
